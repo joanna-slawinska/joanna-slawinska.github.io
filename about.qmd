@@ -1,30 +1,104 @@
 ---
 title: "About me"
-description: "About Joanna Slawinska, Research Assistant Professor in the Department of Mathematics at Dartmouth College."
 toc: false
 ---
 
-I am a Research Assistant Professor in the Department of Mathematics at Dartmouth College. I develop
-data-driven and operator-theoretic methods for understanding and predicting complex nonlinear systems,
-with applications ranging from weather and climate to plasma physics and neuroscience.
+I am a Research Assistant Professor in the Department of Mathematics at Dartmouth College.
 
-My current work combines Koopman operator theory with ideas from quantum mechanics, including quantum
-computing, to extract patterns from data, build reduced models and assimilate observations. Examples
-include the El Niño–Southern Oscillation, the Madden–Julian Oscillation and organized convection. I
-work with collaborators in mathematics, physics and the climate sciences.
+I research complex and physical systems using a plethora of tools, including data-driven and
+operator-theoretic methods for understanding and predicting complex nonlinear systems, with
+applications ranging from weather and climate to plasma physics and neuroscience. I work with
+collaborators in mathematics, physics, computer science, engineering and domain sciences.
 
-I trained as a physicist at the University of Warsaw, and worked at NYU and NYU Abu Dhabi, Rutgers,
-the University of Wisconsin–Milwaukee and the University of Helsinki before joining Dartmouth in 2022.
+I got my degrees at the Faculty of Physics of the University of Warsaw. I took my M.S. in Physics
+with Honors in 2005, at the Astronomical Observatory, working in astrophysics on asteroseismology
+under Wojciech A. Dziembowski; that work led to a study of the regular pulsation of two luminous
+blue variable stars in NGC 300. I stayed in Warsaw for my Ph.D., taken in 2011 at the Institute of
+Geophysics in computational geophysics and fluid dynamics, with a dissertation on the impact of
+entrainment and mixing on the optical properties of shallow cumulus clouds. Throughout those years I
+spent roughly half of each year at the National Center for Atmospheric Research (NCAR) in Boulder,
+Colorado, where my mentor was Dr. Wojciech W. Grabowski, a senior researcher there. In 2025 I
+completed a Postgraduate Diploma in Management at the SGH Warsaw School of Economics, with a thesis
+on evolutionary ownership and machine learning of strategy.
 
-## Interests
+Before Dartmouth, I was a postdoctoral associate at the Courant Institute of Mathematical Sciences at
+NYU and at the Center for Prototype Climate Modeling at NYU Abu Dhabi, a research associate in the
+Department of Physics at the University of Wisconsin–Milwaukee, and a senior researcher at the
+Finnish Center for Artificial Intelligence and the Department of Computer Science of the University
+of Helsinki. I joined Dartmouth in 2022.
 
-::: {.home-links-row .about-interests}
-[Data-driven modeling](research.qmd#data-driven-modeling-and-machine-learning){.btn .btn-outline-primary}
-[Operator-theoretic methods](research.qmd#operator-theoretic-methods-for-nonlinear-dynamics){.btn .btn-outline-primary}
-[Quantum approaches](research.qmd#quantum-mechanical-approaches-and-quantum-computing){.btn .btn-outline-primary}
-[Climate and complex systems](research.qmd#climate-and-complex-systems){.btn .btn-outline-primary}
+::::: {.about-tabs}
+
+:::: {.about-tab #interests}
+## Professional interests
+
+{{< include _research.qmd >}}
+::::
+
+:::: {.about-tab #publications}
+## Publications
+
+{{< include _publications.qmd >}}
+::::
+
+:::: {.about-tab #presentations}
+## Presentations
+
+{{< include _talks.qmd >}}
+::::
+
+:::: {.about-tab #service}
+## Professional activities
+
+### Minisymposia organized
+
+Special minisymposia organized at SIAM conferences:
+
+- SIAM Conference on Applications of Dynamical Systems, 2025
+- SIAM Conference on Mathematics of Data Science, 2022
+- SIAM Conference on Mathematics of Planet Earth, 2020
+
+### Reviewer for journals and conferences
+
+Journals:
+
+::: {.about-columns}
+- SIAM Journal on Applied Dynamical Systems
+- Physical Review E
+- Nature Communications
+- Journal of Computational Dynamics
+- Journal of Advances in Modeling Earth Systems (JAMES)
+- Journal of Climate
+- Journal of the Atmospheric Sciences
+- Geophysical Research Letters
+- Pure and Applied Geophysics
 :::
+
+Conferences and workshops:
+
+- First Northeast Regional Conference on Complex Systems
+- 8th and 9th International Workshops on Climate Informatics
+- Workshop on Tackling Climate Change with Machine Learning, NeurIPS 2019
+- IEEE 5th International Conference on Signal and Image Processing (ICSIP 2020)
+- 4th International Conference on Artificial Intelligence and Neuroscience (ACAIN 2024)
+
+### Reports
+
+- Co-author of the *Final Report of Recommendations for NSF Future Actions*, issued by the
+  participants of the NSF Workshop on Quantum, Climate and Sustainability, 2023.
+
+### Review of grant proposals
+
+- **National Science Foundation (NSF)** — panel member, review of proposals for the Collaborations in
+  Artificial Intelligence and Geosciences (CAIG) call, June 2024.
+- **U.S. Department of Energy (DOE)** — ad-hoc reviewer of a proposal on quantum information science,
+  quantum computing and plasma physics, 2024.
+::::
+
+:::::
 
 ::: {.about-back}
 [← Back to the home page](index.qmd)
 :::
+
+<script src="tabs.js" defer></script>

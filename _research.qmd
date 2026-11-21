@@ -1,0 +1,47 @@
+My research is about finding structure in complex nonlinear systems and using it to predict them. I
+come from computational fluid dynamics and geophysics, and now work mostly at the meeting point of
+dynamical systems, data analysis and quantum-mechanical ideas. Papers are listed under
+Publications.
+
+### Data-driven modeling and machine learning
+
+Observations of climate, neural activity or turbulent flows are high-dimensional and noisy. I work on
+ways to reduce them to a few meaningful spatiotemporal patterns and to use those patterns for
+prediction, including extended-range forecasting of the El Niño–Southern Oscillation and the
+identification of the Madden–Julian Oscillation.
+
+### Operator-theoretic methods for nonlinear dynamics
+
+Instead of following individual trajectories, operator-theoretic methods study how a system acts on
+observables. Koopman operators and their spectra give a linear description of nonlinear dynamics,
+which can be learned from data with kernel methods, tensor networks and exterior calculus. I use these
+tools to separate trends, cycles and modes of variability in the climate system, and to analyse
+non-autonomous and skew-product systems.
+
+### Quantum-mechanical approaches and quantum computing
+
+The same operator framework connects classical dynamics to quantum mechanics. I work on embedding
+classical systems in quantum computers, on second quantization of classical nonlinear dynamics, and on
+quantum-mechanical closure and data assimilation, where a quantum formalism is used to model the
+unresolved scales of a classical system.
+
+### Physics and complex systems
+
+I am a physicist by training, and physics is still how I approach a problem: conserved quantities,
+symmetries, the scales on which something happens, and the behaviour that appears once many parts
+interact. Complex systems are where that way of thinking is hardest to apply and most useful. The
+underlying laws are known in principle, but what one wants to predict lives far from any single scale,
+so the task becomes finding the structures that organize the system and building models that keep
+them. In my own work this has meant turbulent and multiscale flows, clouds and precipitation,
+atmospheric and oceanic variability, plasmas, sea ice, neural activity and stellar oscillations.
+
+### Strategy and decision making
+
+Outside the sciences, I am interested in making strategy and decision making objective: stating what
+is actually being optimized, keeping the evidence in view, and being able to defend a choice by
+something firmer than intuition. That interest led to my 2025 management thesis at the SGH Warsaw
+School of Economics, *Evolutionary Ownership & Machine Learning of Strategy: AI for Modeling Adaptive
+Management of Global Mission-Driven Ventures*. What draws me to the subject is the future of
+international mission-driven ventures: how they can be owned, governed and steered across borders.
+The legal side of this is genuinely complicated, yet technology, and machine learning in particular,
+opens up so many possibilities that ambitious dreams and visions now look pursuable at scale.

@@ -1,0 +1,105 @@
+Newest first. Links go to the published version or the preprint. A complete list is on [Google Scholar](https://scholar.google.com/citations?user=XTLyFDAAAAAJ&hl=en) and [ORCID](https://orcid.org/0000-0003-3099-5136).
+
+### In preparation and to be submitted
+
+1. Joseph, I., I. Novikau, M. Montgomery, **J. Slawinska**, and D. Giannakis, 2026: The integrable Lie–Trotter–Suzuki decomposition for nonlinear dynamics: Efficient Hamiltonian simulation of the Stepanoff flow. To be submitted.
+2. Vales, Ch., I. Joseph, B. Zhu, **J. Slawinska**, and D. Giannakis, 2026: Spatiotemporal pattern extraction by accelerated kernel methods. In preparation.
+3. Camper, T., D. Giannakis, R. Kapoor, and **J. Slawinska**, 2026: Integral Transformation Methods for Spectral Approximation of Koopman Operators. Applied and Computational Harmonic Analysis. To be submitted.
+4. Freeman, D., Ch. Vales, A. Wyszogrodzki, **J. Slawinska**, and D. Giannakis, 2026: Quantum mechanical coarse graining of cloud-resolving models of organized convection. Nature Communications. To be submitted.
+
+### Published and in press
+
+#### 2026
+
+1. Das, S., D. Giannakis, Y. Gu, and **J. Slawinska**, 2026: Learning Dynamical Systems with the Spectral Exterior Calculus. SIAM Journal on Applied Dynamical Systems. In Print. <https://arxiv.org/abs/2505.06061>.
+2. Carr, T., D. Giannakis, B. R. Lintner, **J. Slawinska**, and C. C. Ummenhofer, 2026: A Koopman Interpretation of the recharge oscillator model for ENSO. Journal of Climate, 39, 3905-3930. [doi:10.1175/JCLI-D-25-0527.1](https://doi.org/10.1175/JCLI-D-25-0527.1)
+3. Giannakis, D., M. M. L. Jebelli, M. Montgomery, P. Pfeffer, J. Schumacher, and **J. Slawinska**, 2026: Second quantization for classical nonlinear dynamics. *Nonlinearity*, 39, 115006 (open access). [arXiv:2501.07419](https://arxiv.org/abs/2501.07419).
+4. Vales, Ch., D. C. Freeman, **J. Slawinska**, and D. Giannakis, 2026: Quantum mechanical closure of partial differential equations with symmetries. Journal of Computational Physics, Volume 562. [doi:10.1016/j.jcp.2026.114992](https://doi.org/10.1016/j.jcp.2026.114992).
+
+#### 2025
+
+5. Giannakis, D., M. M. L. Jebelli, M. Montgomery, P. Pfeffer, J. Schumacher, and **J. Slawinska**, 2025: Tensor network approximation of Koopman operators. In Revision. <https://arxiv.org/abs/2407.07242>.
+
+#### 2024
+
+6. Giannakis, D., Y. Hashimoto, M. Ikeda, I. Ishikawa, and **J. Slawinska**, 2024: Koopman spectral analysis of skew-product dynamics on Hilbert C*-modules. <https://arxiv.org/abs/2307.08965>.
+7. Froyland, G., D. Giannakis, E. Luna, and **J. Slawinska**, 2024: Revealing trends and persistent cycles of non-autonomous systems with operator-theoretic techniques: Applications to past and present climate dynamics. Nature Communications. [doi:10.1038/s41467-024-48033-6](https://doi.org/10.1038/s41467-024-48033-6).
+8. Freeman, D., D. Giannakis, and **J. Slawinska**, 2024: Quantum Mechanics for Closure of Dynamical Systems. SIAM Multiscale Modeling & Simulation, 22(1), 283-333. [doi:10.1137/22M1514246](https://doi.org/10.1137/22M1514246).
+
+#### 2023
+
+9. Lintner, B., D. Giannakis, M. Pike, and **J. Slawinska**, 2023: Identification of the Madden–Julian Oscillation With Data-Driven Koopman Spectral Analysis. Geophysical Research Letters (GRL), 50, e2023GL102743. [doi:10.1029/2023GL102743](https://doi.org/10.1029/2023GL102743).
+10. Dinh, H., D. Giannakis, **J. Slawinska**, and G. Stadler, 2023: Phase-field Models of Floe Fracture in Sea Ice. The Cryosphere, 17, 3883–3893. [doi:10.5194/tc-17-3883-2023](https://doi.org/10.5194/tc-17-3883-2023)
+11. Freeman, D., D. Giannakis, B. Mintz, A. Ourmazd, and **J. Slawinska**, 2023: Data Assimilation in Operator Algebras. The Proceedings of the National Academy of Sciences (PNAS), 120 (8) e2211115120. [doi:10.1073/pnas.2211115120](https://doi.org/10.1073/pnas.2211115120).
+
+#### 2022
+
+12. Giannakis, D. A. Ourmazd, P. Pfeffer, J. Schumacher, and **J. Slawinska**, 2022: Embedding classical dynamics in a quantum computer. Phys. Rev. A. 105, 052404. [doi:10.1103/PhysRevA.105.052404](https://doi.org/10.1103/PhysRevA.105.052404).
+
+#### 2021
+
+13. Froyland, G., D. Giannakis, B. Lintner, M. Pike, and **J. Slawinska**, 2021: Spectral analysis of climate dynamics with operator-theoretic approaches. Nature Communications, 12, 6570. [doi:10.1038/s41467-021-26357-x](https://doi.org/10.1038/s41467-021-26357-x).
+
+#### 2020
+
+14. Das, S., D. Giannakis, and **J. Slawinska**, 2020: Reproducing kernel Hilbert space compactification of unitary evolution groups. Applied and Computational Harmonic Analysis, 54, 75–136. [doi:10.1016/j.acha.2021.02.004](https://doi.org/10.1016/j.acha.2021.02.004).
+15. Marrouch, N., **J. Slawinska**, D. Giannakis, and H. Read, 2020: Data-driven Koopman operator approach for computational neuroscience. Annals of Mathematics and Artificial Intelligence, Special Issue on Cognition and Neurocomputation, 88, 1155–1173. [doi:10.1007/s10472-019-09666-2](https://doi.org/10.1007/s10472-019-09666-2).
+
+#### 2019
+
+16. Wang, X., **J. Slawinska**, and D. Giannakis, 2019: Extended-range statistical ENSO prediction through operator-theoretic techniques for nonlinear dynamics. Scientific Reports, 10, 2636. [doi:10.1038/s41598-020-59128-7](https://doi.org/10.1038/s41598-020-59128-7).
+17. **Slawinska, J.**, A. Ourmazd, and D. Giannakis, 2019: A Quantum Mechanical Approach for Data Assimilation in Climate Dynamics. 36th International Conference on Machine Learning, Proceedings of Workshop on “Climate Change: How Can AI Help?.” Online Proceedings.
+
+#### 2018
+
+18. Giannakis, D., A. Ourmazd, **J. Slawinska**, and Z. Zhao, 2018: Spatiotemporal pattern extraction by spectral analysis of vector-valued observables. Journal of Nonlinear Science, 29, 2385–2445. [doi:10.1007/s00332-019-09548-1](https://doi.org/10.1007/s00332-019-09548-1).
+19. **Slawinska, J.**, A. Ourmazd, and D. Giannakis, 2018: A new approach to signal processing of spatiotemporal data. Proceedings of 2018 IEEE Statistical Signal Processing Workshop, Freiburg im Breisgau, Germany. IEEE Xplore Digital Library, 338–342. [doi:10.1109/SSP.2018.8450704](https://doi.org/10.1109/SSP.2018.8450704).
+20. Marrouch, N., H. Read, **J. Slawinska**, and D. Giannakis, 2018: Data-driven spectral decomposition of ECoG signal from an auditory oddball experiment in a marmoset monkey: Implications for EEG data in humans. IEEE World Congress on Computational Intelligence, The International Joint Conference on Neural Networks (IJCNN), Rio de Janeiro, Brazil. IEEE Xplore Digital Library, 1–10. [doi:10.1109/IJCNN.2018.8489475](https://doi.org/10.1109/IJCNN.2018.8489475).
+21. Wang, X., D. Giannakis, and **J. Slawinska**, 2018: Antarctic Circumpolar Wave and Its Seasonality: Intrinsic Traveling Modes and ENSO Teleconnections. International Journal of Climatology, 39, 1026–1040. [doi:10.1002/joc.5860](https://doi.org/10.1002/joc.5860).
+22. Giannakis, D., and **J. Slawinska**, 2018: Indo-Pacific Variability on Seasonal to Multidecadal Timescales. Part II: Multiscale Atmosphere-Ocean Interactions. J. Climate, 31, 693–725. [doi:10.1175/JCLI-D-17-0031.1](https://doi.org/10.1175/JCLI-D-17-0031.1).
+23. **Slawinska, J.**, and A. Robock, 2018: Impact of Volcanic Eruptions on Decadal to Centennial Fluctuations of Arctic Sea Ice Extent during the Last Millennium and on Initiation of the Little Ice Age. J. Climate, 31, 2145–2167. [doi:10.1175/JCLI-D-16-0498.1](https://doi.org/10.1175/JCLI-D-16-0498.1).
+
+#### 2017
+
+24. Giannakis, D., **J. Slawinska**, A. Ourmazd, and Z. Zhao, 2017: Vector-Valued Spectral Analysis of Space-Time Data. Neural Information Processing System Conference, Long Beach, CA. Proceedings of 2017 Time Series Workshop. nips:2017:time-series-workshop.
+25. Zambri, B., A. LeGrande, A. Robock, and **J. Slawinska**, 2017: Winter Warming and Summer Monsoon Reduction after Volcanic Eruptions over the Last Millennium. Journal of Geophysical Research: Atmospheres, 122, 7971–7989. [doi:10.1002/2017JD026728](https://doi.org/10.1002/2017JD026728).
+26. **Slawinska, J.**, and D. Giannakis, 2017: Indo-Pacific Variability on Seasonal to Multidecadal Timescales. Part I: Intrinsic SST Modes in Models and Observations. J. Climate, 30, 5265–5294. [doi:10.1175/JCLI-D-16-0176.1](https://doi.org/10.1175/JCLI-D-16-0176.1).
+27. **Slawinska, J.**, E. Székely, and D. Giannakis, 2017: Data-driven Koopman analysis of tropical climate space-time variability. 17th SIAM International Conference on Data Mining, American Statistical Association. Proceedings of “Workshop on Mining Big Data in Climate and Environment”. siam:mbdce:2017.
+
+#### 2016
+
+28. **Slawinska, J.**, O. Pauluis, A. Majda, and W. W. Grabowski, 2016: Multiscale Interactions in an Idealized Walker Cell: Analysis with Isentropic Streamfunctions. J. Atmos. Sci., 73, 1187–1203. [doi:10.1175/JAS-D-15-0070.1](https://doi.org/10.1175/JAS-D-15-0070.1).
+29. **Slawinska, J.**, and D. Giannakis, 2016: Spatiotemporal Pattern Extraction with Data-Driven Koopman Operators for Convectively Coupled Equatorial Waves. 6th International Workshop on Climate Informatics (CI 2016). NCAR Technical Note NCAR/TN-529+PROC, 2016, 49–52. NCAR OpenSky.
+
+#### 2015
+
+30. Giannakis, D., **J. Slawinska**, and Z. Zhao, 2015: Spatiotemporal Feature Extraction with Data-Driven Koopman Operators. Neural Information Processing System Conference. Journal of Machine Learning Research, Proceedings of the 1st International Workshop on “Feature Extraction: Modern Questions and Challenges”, 44, 103–115. <http://proceedings.mlr.press/v44/giannakis15.pdf>.
+31. **Slawinska, J.**, O. Pauluis, A. Majda, and W. W. Grabowski, 2015: Multiscale Interactions in an Idealized Walker Cell: Simulations with Sparse Space–Time Superparameterization. Mon. Wea. Rev., 143, 563–580. [doi:10.1175/MWR-D-14-00082.1](https://doi.org/10.1175/MWR-D-14-00082.1).
+
+#### 2014
+
+32. **Slawinska, J.**, O. Pauluis, A. Majda, and W. W. Grabowski, 2014: Multiscale Interactions in an Idealized Walker Circulation: Mean Circulation and Intraseasonal Variability. J. Atmos. Sci., 71, 953–971. [doi:10.1175/JAS-D-13-018.1](https://doi.org/10.1175/JAS-D-13-018.1).
+
+#### 2012
+
+33. **Slawinska, J.**, W. W. Grabowski, H. Pawlowska, and H. Morrison, 2012: Droplet Activation and Mixing in Large-Eddy Simulation of a Shallow Cumulus Field. J. Atmos. Sci., 69, 444–462. [doi:10.1175/JAS-D-11-054.1](https://doi.org/10.1175/JAS-D-11-054.1).
+
+#### 2011
+
+34. Grabowski, W. W., **J. Slawinska**, H. Pawlowska, and A. Wyszogrodzki, 2011: Macroscopic impacts of cloud and precipitation processes in shallow convection. Acta Geophysica, 59, 1184–1204. [doi:10.2478/s11600-011-0038-9](https://doi.org/10.2478/s11600-011-0038-9).
+
+#### 2010
+
+35. van Zanten et al., 2010: Controls on precipitation and cloudiness in simulations of trade-wind cumulus as observed during RICO. J. Adv. Model. Earth Syst., 3, M06001. [doi:10.1029/2011MS000056](https://doi.org/10.1029/2011MS000056).
+
+#### 2009
+
+36. **Slawinska, J.**, W. W. Grabowski, and H. Morrison, 2009: The impact of atmospheric aerosols on precipitation from deep organized convection: A prescribed flow-model study using double-moment bulk microphysics. Q. J. R. Meteorol. Soc., 644, 1906–1913. [doi:10.1002/qj.450](https://doi.org/10.1002/qj.450).
+
+#### 2008
+
+37. **Slawinska, J.**, W. W. Grabowski, H. Pawlowska, and A. A. Wyszogrodzki, 2008: Optical Properties of Shallow Convective Clouds Diagnosed from a Bulk-Microphysics Large-Eddy Simulation. J. Climate, 21, 1639–1647. [doi:10.1175/2007JCLI1820.1](https://doi.org/10.1175/2007JCLI1820.1).
+
+#### 2005
+
+38. Dziembowski, W. A., and **J. Slawinska**, 2005: On the Nature of Regular Pulsation in Two LBV Stars of NGC 300. Acta Astronomica, 55, 195–204. [ADS: 2005AcA....55..195D](https://ui.adsabs.harvard.edu/abs/2005AcA....55..195D).

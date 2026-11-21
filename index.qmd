@@ -39,7 +39,7 @@ Hanover, NH, United States
 ::: {.papers-head}
 ## Selected publications
 
-[All publications →](publications.qmd){.papers-all}
+[All publications →](about.qmd#publications){.papers-all}
 :::
 
 ::: {.paper-browser}

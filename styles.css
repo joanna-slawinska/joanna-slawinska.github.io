@@ -1240,3 +1240,97 @@ main:has(.project-facts) > h1 {
   font-size: 0.82rem;
   letter-spacing: 0.01em;
 }
+
+/* The credit under each figure: the paper it comes from. */
+.paper-credit {
+  display: block;
+  font-size: 0.72rem;
+  opacity: 0.85;
+}
+
+/* ---------------------------------------------------------------------------------------------
+   About me page: four parts behind big tabs (tabs.js, about.qmd).
+   Without JavaScript the parts simply follow one another down the page. */
+.about-tabbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 2rem 0 1.75rem;
+  border-bottom: 2px solid rgba(0, 105, 62, 0.22);
+  padding-bottom: 0.6rem;
+}
+
+.about-tabbtn {
+  flex: 1 1 auto;
+  min-width: 10rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.25;
+  color: #1f4a32;
+  background: rgba(226, 243, 230, 0.45);
+  border: 1px solid rgba(0, 105, 62, 0.28);
+  border-bottom-width: 3px;
+  border-radius: 6px 6px 0 0;
+  padding: 0.85rem 1.1rem;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.about-tabbtn:hover,
+.about-tabbtn:focus-visible {
+  background: rgba(200, 228, 207, 0.75);
+}
+
+.about-tabbtn.is-current {
+  color: #fff;
+  background: #00693e;
+  border-color: #00693e;
+}
+
+/* The chosen part only; the heading is already on its button. */
+.about-tabs-on .about-tab {
+  display: none;
+}
+
+.about-tabs-on .about-tab.is-current {
+  display: block;
+}
+
+.about-tabs-on .about-tab-title {
+  display: none;
+}
+
+.about-tabs-on .about-tab > section > h3:first-of-type,
+.about-tabs-on .about-tab h3:first-of-type {
+  margin-top: 0;
+}
+
+/* The years in the list of publications. */
+.about-tab h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1f4a32;
+  margin-top: 1.5rem;
+}
+
+/* The list of journals, in two columns where there is room. */
+.about-columns ul {
+  columns: 2;
+  column-gap: 2.5rem;
+}
+
+.about-columns li {
+  break-inside: avoid;
+}
+
+@media (max-width: 575.98px) {
+  .about-columns ul {
+    columns: 1;
+  }
+
+  .about-tabbtn {
+    flex-basis: 100%;
+    font-size: 1rem;
+    padding: 0.7rem 0.9rem;
+  }
+}

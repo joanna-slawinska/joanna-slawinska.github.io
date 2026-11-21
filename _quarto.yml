@@ -1,28 +1,30 @@
 # Site settings. Everything marked CHANGE needs your own text.
 project:
   type: website
+  # Which files become pages: every .qmd file, except the ones marked with "!".
+  # The old Research, Publications and Talks pages and the blog are switched off here; their content
+  # now lives on the About me page. To bring the blog back, delete the "!blog/" line and add
+  # "Blog" (href: blog/index.qmd) to the menu below.
+  render:
+    - "*.qmd"
+    - "!blog/"
+    - "!research.qmd"
+    - "!publications.qmd"
+    - "!talks.qmd"
   # Files used only from scripts or from styles.css, which Quarto cannot find by itself.
   resources:
     - images/**
     - papers.js
+    - tabs.js
 
 website:
   title: "Joanna Slawinska"
   description: "Personal website of Joanna Slawinska, Department of Mathematics, Dartmouth College."
-  # The public address of the site. Fill this in once the site is published; it switches on the blog feed.
+  # The public address of the site. Fill this in once the site is published.
   # site-url: "https://your-username.github.io/"
   navbar:
     title: "Joanna Slawinska"
     collapse-below: lg
-    left:
-      - text: "Research"
-        href: research.qmd
-      - text: "Publications"
-        href: publications.qmd
-      - text: "Talks"
-        href: talks.qmd
-      - text: "Blog"
-        href: blog/index.qmd
     right:
       # CHANGE the addresses, or delete the lines you do not want.
       - icon: envelope
