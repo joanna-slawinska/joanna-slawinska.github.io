@@ -1,0 +1,11 @@
+```{=html}
+<% /* Home page: the newest blog post, with its picture. Used by the "recent-posts" listing in index.qmd. */ %>
+<% for (const item of items) { %>
+<div class="home-post">
+  <div class="home-post-date"><%= item.date %></div>
+  <a class="home-post-title" href="<%- item.path %>"><%= item.title %></a>
+  <% if (item.description) { %><div class="home-post-text"><%= String(item.description).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/\*([^*]+)\*/g, "<em>$1</em>") %></div><% } %>
+  <% if (item.image) { %><a class="home-post-figure" href="<%- item.path %>" aria-label="<%= item.title %>"><img src="<%- item.image %>" alt=""></a><% } %>
+</div>
+<% } %>
+```

@@ -1,0 +1,27 @@
+Quantum Information Science (QIS) and Fusion Energy Science (FES) promise to deliver radical advances
+in computational capabilities and access to abundant clean energy, respectively. Yet, realizing
+these benefits hinges upon overcoming considerable theoretical, methodological, and technical
+challenges that will require interdisciplinary efforts spanning mathematics, physics, computer
+science, and engineering. Novel techniques, leveraging operator theory, dynamical systems theory, and
+data science are needed to consistently and efficiently encode the complex nonlinear dynamics of
+plasmas into quantum computational algorithms that will open new possibilities in simulation and
+analysis of fusion energy systems. In response, the overarching goal of this project is to develop
+an improved mathematical framework and computational techniques for quantum simulation and analysis
+of plasma dynamics that will provide foundations for successful deployment of QIS to FES
+applications.
+
+Our approach leverages the operator-theoretic formulation of ergodic theory, which represents
+classical nonlinear dynamics through intrinsically linear Koopman operators on observables, enabling
+connections between classical and quantum dynamics such as the Koopman-von Neumann formalism. Using
+this framework, the project will address a hierarchy of problems, focusing on four objectives: (1)
+Efficient and provably consistent quantum algorithms for chaotic systems; (2) Koopman operator
+techniques and quantum algorithms for systems with spatial structure governed by partial
+differential equations (PDEs); (3) Koopman mode identification and model reduction for fluid and
+kinetic models of plasma dynamics; and (4) Quantum algorithms for closure and subgrid-scale modeling
+of plasma dynamics. Our algorithms will be suitable for implementation in Noisy Intermediate-Scale
+Quantum (NISQ) devices, but even if implemented classically they will benefit from
+structure-preserving properties of quantum mechanical representations of classical dynamics. We will
+deploy these methods to applications in FES-relevant fluid and kinetic models, including
+magnetohydrodynamic and Vlasov-Poisson models. The project will contribute towards STEM workforce
+development through curricular development and training of students and postdoctoral researchers
+that will take advantage of both University and FFRDC environments.

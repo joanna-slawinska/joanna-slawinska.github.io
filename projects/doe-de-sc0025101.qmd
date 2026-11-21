@@ -1,0 +1,28 @@
+---
+title: "Quantum Information Science and Koopman Operator Theory for Improved Modeling and Understanding of Plasmas"
+subtitle: "U.S. Department of Energy award DE-SC0025101 · 2024–2027"
+description: "Quantum algorithms and Koopman operator methods for modeling plasma dynamics, funded by the DOE Office of Fusion Energy Sciences."
+toc: false
+---
+
+::: {.project-facts}
+[Funder]{.fact-label} U.S. Department of Energy, Office of Science, Fusion Energy Sciences
+
+[Award number]{.fact-label} DE-SC0025101
+
+[Project period]{.fact-label} 1 August 2024 – 31 July 2027
+
+[Principal investigator]{.fact-label} Dimitrios Giannakis, Dartmouth College
+
+[Team]{.fact-label} I. Joseph, Lawrence Livermore National Laboratory; Joanna Slawinska, Dartmouth College
+:::
+
+{{< include /projects/_doe-abstract.qmd >}}
+
+::: {.project-links}
+[DOE public abstract](https://pamspublic.science.energy.gov/WebPAMSExternal/Interface/Common/ViewPublicAbstract.aspx?rv=dc8e47f7-08fa-482d-94e0-5f40d437684e&rtc=24&PRoleId=10){.btn .btn-outline-primary}
+:::
+
+::: {.about-back}
+[← Back to the home page](../index.qmd)
+:::

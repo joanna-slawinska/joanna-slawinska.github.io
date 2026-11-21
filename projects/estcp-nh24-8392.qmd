@@ -1,0 +1,29 @@
+---
+title: "A Computational Toolkit for Data-Driven Analysis and Modeling of Complex Spatiotemporal Dynamics Using Operator-Theoretic Techniques: Applications to Natural Hazards"
+subtitle: "DoW ESTCP project NH24-8392 · 2024–2027"
+description: "A data-driven toolkit for analysing and forecasting the MJO, ENSO and Pacific decadal variability, funded by ESTCP."
+toc: false
+---
+
+::: {.project-facts}
+[Funder]{.fact-label} Environmental Security Technology Certification Program (ESTCP), Department of War
+
+[Project number]{.fact-label} NH24-8392
+
+[Period]{.fact-label} 2024–2027
+
+[Principal investigator]{.fact-label} Dimitrios Giannakis, Dartmouth College
+
+[Co-PI]{.fact-label} Joanna Slawinska, Dartmouth College
+:::
+
+{{< include /projects/_estcp-abstract.qmd >}}
+
+::: {.project-links}
+[Project website](https://nh24-8392.github.io/public-website/){.btn .btn-outline-primary}
+[ESTCP project page](https://serdp-estcp.mil/projects/details/26a6bf70-cebd-41d4-9a18-1ba3779789cb){.btn .btn-outline-primary}
+:::
+
+::: {.about-back}
+[← Back to the home page](../index.qmd)
+:::

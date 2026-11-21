@@ -1,0 +1,30 @@
+---
+title: "About me"
+description: "About Joanna Slawinska, Research Assistant Professor in the Department of Mathematics at Dartmouth College."
+toc: false
+---
+
+I am a Research Assistant Professor in the Department of Mathematics at Dartmouth College. I develop
+data-driven and operator-theoretic methods for understanding and predicting complex nonlinear systems,
+with applications ranging from weather and climate to plasma physics and neuroscience.
+
+My current work combines Koopman operator theory with ideas from quantum mechanics, including quantum
+computing, to extract patterns from data, build reduced models and assimilate observations. Examples
+include the El Niño–Southern Oscillation, the Madden–Julian Oscillation and organized convection. I
+work with collaborators in mathematics, physics and the climate sciences.
+
+I trained as a physicist at the University of Warsaw, and worked at NYU and NYU Abu Dhabi, Rutgers,
+the University of Wisconsin–Milwaukee and the University of Helsinki before joining Dartmouth in 2022.
+
+## Interests
+
+::: {.home-links-row .about-interests}
+[Data-driven modeling](research.qmd#data-driven-modeling-and-machine-learning){.btn .btn-outline-primary}
+[Operator-theoretic methods](research.qmd#operator-theoretic-methods-for-nonlinear-dynamics){.btn .btn-outline-primary}
+[Quantum approaches](research.qmd#quantum-mechanical-approaches-and-quantum-computing){.btn .btn-outline-primary}
+[Climate and complex systems](research.qmd#climate-and-complex-systems){.btn .btn-outline-primary}
+:::
+
+::: {.about-back}
+[← Back to the home page](index.qmd)
+:::

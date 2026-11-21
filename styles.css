@@ -1,0 +1,1242 @@
+/* Tables: keep the words of links whole. Quarto lets link text in tables break between any two
+   letters, which squeezes columns of links (such as the block names on the Calculation blocks page)
+   until words are split. */
+.table a {
+  word-break: normal;
+  overflow-wrap: break-word;
+}
+
+/* Code in list items: wrap like code in paragraphs. The theme keeps code in list items on one
+   line, so a long name in a bullet point pushed the whole page sideways on phones. A name is
+   broken only if it is wider than the screen. */
+li code:not(.sourceCode) {
+  white-space: pre-wrap;
+}
+
+/* Tables on phones: scroll sideways inside the table, instead of pushing the whole page sideways. */
+@media (max-width: 767.98px) {
+  main table {
+    display: block;
+    overflow-x: auto;
+  }
+}
+
+/* Site name in the navbar. */
+.navbar-brand .navbar-title {
+  font-size: 1.15rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+/* Home page: full-width layout, with the title, subtitle and welcome text centred. */
+/* The home page has its own title in the middle column, so Quarto's title block is hidden. */
+#quarto-content:has(.home-columns) #title-block-header {
+  display: none;
+}
+
+.home-mid {
+  text-align: center;
+}
+
+.home-title {
+  font-size: 1.45rem;
+  line-height: 1.28;
+  margin: 0 0 0.7rem;
+  text-wrap: balance;
+}
+
+.home-subtitle {
+  font-size: 1.15rem;
+  font-weight: 300;
+  margin: 0 0 1.4rem;
+}
+
+.home-intro p {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 56rem;
+}
+
+/* Home page: use almost the full width of the screen (Quarto's default page column leaves wide margins). */
+#quarto-content:has(.home-columns) #quarto-document-content {
+  grid-column: screen-start-inset / screen-end-inset;
+}
+
+/* Home page: three columns, the middle one twice as wide; they stack on narrow screens. */
+.home-columns {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr) minmax(0, 1fr);
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 991.98px) {
+  .home-columns {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+  }
+
+  /* when stacked, the introduction comes first */
+  .home-mid {
+    order: -1;
+  }
+}
+
+.home-col > h2:first-child {
+  margin-top: 0;
+}
+
+/* Slide viewer (see slideshow.js). */
+.slideshow {
+  color: #212529;
+  max-width: 1100px;
+  margin: 1rem auto 2rem;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.slideshow:focus-visible {
+  outline: 3px solid var(--bs-primary, #006a40);
+  outline-offset: 2px;
+}
+
+.slideshow-stage {
+  position: relative;
+  background: #eee;
+  aspect-ratio: 16 / 9;
+}
+
+.slideshow-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.slideshow-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2.75rem;
+  height: 2.75rem;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.45);
+  color: #fff;
+  font-size: 1.9rem;
+  line-height: 1;
+  padding: 0 0 0.2rem;
+  cursor: pointer;
+}
+
+.slideshow-btn:hover:not(:disabled),
+.slideshow-btn:focus-visible {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.slideshow-btn:disabled {
+  opacity: 0.25;
+  cursor: default;
+}
+
+.slideshow-prev { left: 0.75rem; }
+.slideshow-next { right: 0.75rem; }
+
+.slideshow-bar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 0.9rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 0.9rem;
+}
+
+.slideshow-count {
+  min-width: 4.5rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.slideshow-range {
+  flex: 1 1 auto;
+  min-width: 0;
+  accent-color: var(--bs-primary, #006a40);
+}
+
+.slideshow-full {
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  background: #fff;
+  padding: 0.15rem 0.6rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.slideshow:fullscreen,
+.slideshow:-webkit-full-screen {
+  max-width: none;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+}
+
+.slideshow:fullscreen .slideshow-stage,
+.slideshow:-webkit-full-screen .slideshow-stage {
+  flex: 1 1 auto;
+  aspect-ratio: auto;
+  min-height: 0;
+  background: #000;
+}
+
+.slideshow:fullscreen .slideshow-bar,
+.slideshow:-webkit-full-screen .slideshow-bar {
+  background: #fff;
+}
+
+/* The blog list on the home page is in a narrow column, so each post shows its date above the title
+   instead of in a column of its own. */
+.home-col .quarto-listing-default .quarto-post {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: stretch;
+}
+
+.home-col .quarto-listing-default .quarto-post .metadata {
+  margin: 0 0 0.15rem;
+  min-width: 0;
+}
+
+.home-col .quarto-listing-default .quarto-post .body {
+  width: 100%;
+}
+
+/* Listing cards in a home column: show the whole figure instead of a cropped strip. */
+.home-col img.thumbnail-image {
+  height: auto !important;
+  max-height: none !important;
+  object-fit: contain;
+}
+
+/* Small headings inside the home page's middle column. */
+.home-intro h3 {
+  font-size: 1.1rem;
+  margin: 1.6rem 0 0.7rem;
+}
+
+/* A section whose heading and first lines are centred, as on the Talks page. */
+section#slides > h2 {
+  margin-top: 0;
+  text-align: center;
+  border-bottom: 0;
+}
+
+section#slides > p {
+  text-align: center;
+}
+
+/* PAGE BACKGROUND. Three choices; one plain colour is switched on, the other two are commented out.
+   The pictures are an original illustrated desert at dusk, drawn for this template.
+     images/desert-dusk-pale.webp  a pastel version: text stays readable over the whole page
+     images/desert-dusk.webp       the full-colour version: best behind a solid content panel
+   To use a picture, uncomment the body::before block and the matching #quarto-content line. */
+body {
+  background: #f6e4c8;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: #f6e4c8 url("images/desert-dusk-pale.webp") center bottom / cover no-repeat;
+}
+
+#quarto-content {
+  background: rgba(255, 250, 240, 0.4);
+}
+
+/* With the pale picture, use a light see-through panel so the text stays readable:
+     #quarto-content { background: rgba(255, 250, 240, 0.4); }
+   With the full-colour picture, a more solid one:
+     #quarto-content { background: rgba(255, 248, 234, 0.82); } */
+
+.nav-footer {
+  background: #dcebdf;
+}
+
+/* Let the background show behind a left-hand section menu, if a page has one. */
+#quarto-sidebar {
+  background-color: transparent;
+}
+
+/* Slightly darker secondary text (menus, breadcrumbs, captions) so it stays readable over the background picture. */
+#quarto-sidebar .sidebar-item .sidebar-link:not(.active),
+.quarto-page-breadcrumbs .breadcrumb-item.active,
+.quarto-page-breadcrumbs .breadcrumb-item::before {
+  color: #3d4147;
+}
+
+figcaption,
+.figure-caption,
+.quarto-float-caption {
+  color: #454e57;
+}
+
+.listing-category {
+  color: #444b52;
+}
+
+/* Phone: the bar with the section menu button should also let the background through. */
+#quarto-header .quarto-secondary-nav {
+  background-color: #dcebdf !important;
+}
+
+/* Slides and lectures on the home page: four panels, two by two; one column on narrow screens.
+   In each row the titles take the same height, so the viewers and videos line up. */
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem 2rem;
+  margin-top: 1.5rem;
+}
+
+.media-panel {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 3;
+  gap: 0.35rem;
+  min-width: 0;
+}
+
+.media-panel h3 {
+  font-size: 1.15rem;
+  line-height: 1.3;
+  margin: 0;
+  text-align: center;
+  align-self: end;
+}
+
+.media-by {
+  font-size: 0.92rem;
+  text-align: center;
+  margin: 0 0 0.3rem;
+}
+
+.media-panel .slideshow {
+  margin: 0;
+  max-width: none;
+  align-self: start;
+}
+
+.media-video {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  background: #000;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  overflow: hidden;
+  align-self: start;
+}
+
+.media-video iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media (max-width: 991.98px) {
+  .media-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* Dividers on the home page: fine green lines that fade out at their ends.
+   Between the three columns (vertical on wide screens, horizontal when the columns stack),
+   and one across the page above "Slides and lectures". */
+@media (min-width: 992px) {
+  .home-columns {
+    gap: 0;
+  }
+
+  .home-left {
+    padding-right: 1.75rem;
+  }
+
+  .home-right {
+    padding-left: 1.75rem;
+  }
+
+  .home-mid {
+    padding: 0 1.75rem;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-image: linear-gradient(to bottom, rgba(0, 105, 62, 0), rgba(0, 105, 62, 0.6) 12%, rgba(0, 105, 62, 0.6) 88%, rgba(0, 105, 62, 0)) 1;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .home-left,
+  .home-right {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    background: linear-gradient(to right, rgba(0, 105, 62, 0), rgba(0, 105, 62, 0.6) 15%, rgba(0, 105, 62, 0.6) 85%, rgba(0, 105, 62, 0)) top / 100% 1px no-repeat;
+  }
+}
+
+section#slides::before {
+  content: "";
+  display: block;
+  height: 2px;
+  margin: 3rem 0 2.5rem;
+  background: linear-gradient(to right, rgba(0, 105, 62, 0), rgba(0, 105, 62, 0.55) 15%, rgba(0, 105, 62, 0.55) 85%, rgba(0, 105, 62, 0));
+}
+
+/* Home page: each column and the slides section has its own tone of green.
+   To change a tone, edit the colour values below. */
+.home-left {
+  background: #d3e7d6;
+}
+
+.home-mid {
+  background: #f1f8f1;
+}
+
+.home-right {
+  background: #d5e8e3;
+}
+
+.home-col {
+  padding: 1.5rem 1.5rem 1.75rem !important;
+}
+
+@media (min-width: 992px) {
+  .home-left {
+    border-radius: 10px 0 0 10px;
+  }
+
+  .home-right {
+    border-radius: 0 10px 10px 0;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .home-col {
+    border-radius: 10px;
+  }
+
+  .home-left,
+  .home-right {
+    margin-top: 1.25rem;
+    background-image: none;
+  }
+}
+
+section#slides {
+  margin-top: 3rem;
+  padding: 0 1.5rem 2rem;
+  background: #c9e0cf;
+  border-radius: 10px;
+}
+
+section#slides::before {
+  margin: 0 0 2rem;
+  border-radius: 10px 10px 0 0;
+}
+
+section#slides > h2 {
+  padding-top: 0;
+}
+
+/* Top bar on wide screens: the menu sits midway between the name and the icons on the right. */
+@media (min-width: 992px) {
+  #quarto-header .navbar-collapse .navbar-nav.me-auto {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+/* Home page, left column: its tone, headings, and links stacked as full-width buttons. */
+.home-left {
+  background: #dbeadf;
+}
+
+.home-left h2 {
+  font-size: 1.3rem;
+  margin-top: 0;
+}
+
+.home-left section + section {
+  margin-top: 2rem;
+}
+
+.home-links p {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 0;
+}
+
+.home-links .btn {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.55);
+}
+
+/* Home page, blog column: the newest post with its picture. On wide screens the picture takes only
+   the space left over in the column, so it never makes the three columns taller. */
+.home-post-date {
+  font-size: 0.85rem;
+  margin-bottom: 0.3rem;
+}
+
+.home-post-title {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.3;
+  color: inherit;
+  text-decoration: none;
+  margin-bottom: 0.4rem;
+}
+
+.home-post-title:hover {
+  text-decoration: underline;
+}
+
+.home-post-text {
+  font-size: 0.95rem;
+  margin-bottom: 0.7rem;
+}
+
+.home-post-figure {
+  display: block;
+}
+
+.home-post-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  background: #fff;
+}
+
+@media (min-width: 992px) {
+  .home-right {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home-right > section,
+  .home-right .quarto-listing,
+  .home-right #recent-posts,
+  .home-right .home-post {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    min-height: 0;
+  }
+
+  .home-post-figure {
+    position: relative;
+    flex: 1 1 0;
+    min-height: 0;
+    margin-bottom: 0.8rem;
+  }
+
+  .home-post-figure img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center top;
+    border: 0;
+    background: transparent;
+  }
+}
+
+@media (min-width: 1400px) {
+  #quarto-header .navbar-collapse .navbar-nav.ms-auto {
+    align-items: center;
+  }
+}
+
+/* Home page, left column: the photograph. */
+.home-left > p:first-child img {
+  display: block;
+  width: 100%;
+  max-width: 170px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+/* A row of buttons that wrap, as opposed to .home-links which stacks them. */
+.home-links-row p {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 0;
+}
+
+.home-links-row .btn {
+  background: rgba(255, 255, 255, 0.55);
+}
+
+/* ---------------------------------------------------------------------------------------------
+   Home page, left column: name and role under the photo. */
+.home-left .home-title {
+  font-size: 1.35rem;
+  text-align: center;
+  margin: 1rem 0 0.35rem;
+}
+
+.home-left .home-subtitle {
+  font-size: 0.95rem;
+  line-height: 1.45;
+  text-align: center;
+  margin: 0 0 1.25rem;
+}
+
+/* The "About me" button, which opens the About me page. */
+.about-me-link {
+  margin-top: 0.25rem;
+}
+
+/* ---------------------------------------------------------------------------------------------
+   Home page, middle column: selected publications, one at a time (papers.js, _selected-papers.qmd).
+   Without JavaScript every paper is shown, one card after another. */
+.home-mid {
+  text-align: left;
+}
+
+@media (max-width: 991.98px) {
+  .home-mid {
+    order: 0;                    /* on phones: photo and contact first, then the papers */
+  }
+}
+
+.home-mid h2 {
+  margin-top: 0;
+}
+
+.paper {
+  background: rgba(255, 255, 255, 0.62);
+  border: 1px solid rgba(0, 105, 62, 0.18);
+  border-radius: 10px;
+  padding: 1.2rem 1.5rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.paper-browser-on .paper {
+  display: none;
+  margin-bottom: 0;
+}
+
+.paper-browser-on .paper.is-current {
+  display: block;
+}
+
+.paper.from-right {
+  animation: paper-in-right 0.28s ease-out;
+}
+
+.paper.from-left {
+  animation: paper-in-left 0.28s ease-out;
+}
+
+@keyframes paper-in-right {
+  from { opacity: 0; transform: translateX(28px); }
+  to   { opacity: 1; transform: none; }
+}
+
+@keyframes paper-in-left {
+  from { opacity: 0; transform: translateX(-28px); }
+  to   { opacity: 1; transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .paper.from-right,
+  .paper.from-left {
+    animation: none;
+  }
+}
+
+.paper h3 {
+  font-size: 1.2rem;
+  line-height: 1.3;
+  margin: 0.35rem 0 0.45rem;
+  text-wrap: balance;
+}
+
+.paper .anchorjs-link {
+  display: none;
+}
+
+.paper p {
+  margin: 0.55rem 0;
+}
+
+.paper-meta {
+  font-size: 0.85rem;
+  color: #5b6b62;
+}
+
+.paper-new {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #fff;
+  background: var(--bs-primary, #00693e);
+  border-radius: 999px;
+  padding: 0.05rem 0.55rem;
+  margin-left: 0.35rem;
+  vertical-align: 0.1em;
+}
+
+.paper-authors {
+  font-size: 0.92rem;
+  color: #4a4f4c;
+}
+
+.paper-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  color: #00532f;
+  background: rgba(0, 105, 62, 0.1);
+  border-radius: 999px;
+  padding: 0.1rem 0.6rem;
+  margin: 0 0.15rem 0.15rem 0;
+}
+
+.paper .btn-sm {
+  margin: 0 0.3rem 0.3rem 0;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+/* The heading line: "Selected publications" with the counter ("3 of 22") at its right. */
+.papers-head {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.papers-head h2 {
+  margin: 0;
+}
+
+.papers-head p {
+  order: 2;
+  margin: 0;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.paper-count {
+  order: 1;
+  margin-left: auto;
+  font-size: 0.85rem;
+  color: #5b6b62;
+  white-space: nowrap;
+}
+
+/* "More" / "Less" under a shortened summary. */
+.paper-more {
+  align-self: flex-start;
+  border: 0;
+  background: none;
+  padding: 0;
+  margin: -0.35rem 0 0.2rem;
+  font-size: 0.85rem;
+  color: var(--bs-primary, #00693e);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.paper-more[hidden] {
+  display: none;
+}
+
+/* The card with an arrow on each side. */
+.paper-frame {
+  position: relative;
+  padding: 0 3rem;
+}
+
+.paper-arrow {
+  position: absolute;
+  top: 6rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: 1px solid var(--bs-primary, #00693e);
+  background: rgba(255, 255, 255, 0.8);
+  color: var(--bs-primary, #00693e);
+  font-size: 1.7rem;
+  line-height: 1;
+  padding: 0 0 0.2rem;
+  cursor: pointer;
+}
+
+.paper-arrow:hover:not(:disabled),
+.paper-arrow:focus-visible {
+  background: var(--bs-primary, #00693e);
+  color: #fff;
+}
+
+.paper-arrow:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.paper-prev {
+  left: 0;
+}
+
+.paper-next {
+  right: 0;
+}
+
+
+/* Phones: arrows go under the card, so the text keeps the full width. */
+@media (max-width: 575.98px) {
+  .paper-frame {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 0;
+  }
+
+  .paper-stage {
+    flex: 1 0 100%;
+  }
+
+  .paper-arrow {
+    position: static;
+    order: 2;
+  }
+
+  .paper {
+    padding: 1rem 1.1rem 0.8rem;
+  }
+}
+
+.paper-browser + p {
+  margin-top: 0.9rem;
+}
+
+/* The figure of each paper, with its caption. */
+.paper-figure {
+  margin: 0.6rem 0 0.4rem;
+}
+
+.paper-figure-img img {
+  display: block;
+  max-width: 100%;
+  max-height: 300px;
+  margin: 0 auto;
+  border-radius: 4px;
+  background: #fff;
+}
+
+.paper-figure figcaption {
+  font-size: 0.78rem;
+  line-height: 1.35;
+  color: #5b6b62;
+  text-align: center;
+  margin-top: 0.35rem;
+}
+
+/* Wide screens: every paper card is exactly as tall as the photo-and-contact column on the left.
+   The figure takes whatever height the text leaves free, so a paper with a short summary gets a
+   larger figure, and a card never makes the columns taller than the left one. */
+@media (min-width: 992px) {
+  .home-mid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home-mid .paper-browser-on,
+  .paper-browser-on .paper-frame,
+  .paper-browser-on .paper-stage,
+  .paper-browser-on .paper.is-current,
+  .paper-browser-on .paper.is-current > section {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .paper-browser-on .paper-figure {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 140px;
+  }
+
+  .paper-browser-on .paper-figure-img {
+    position: relative;
+    flex: 1 1 auto;
+  }
+
+  .paper-browser-on .paper-figure-img img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    max-height: none;
+    object-fit: contain;
+    background: transparent;
+  }
+
+  .paper-browser-on .paper-summary {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    overflow: hidden;
+    flex: none;
+  }
+
+  .paper-browser-on .paper.is-open .paper-summary {
+    display: block;
+    -webkit-line-clamp: unset;
+    line-clamp: none;
+  }
+
+  /* A paper without a figure: its labels and links still sit at the bottom of the card. */
+  .paper-browser-on .paper p:has(.paper-tag) {
+    margin-top: auto;
+  }
+
+  .paper-arrow {
+    top: 45%;
+  }
+}
+
+/* Phones and tablets: the whole summary is shown, so "More" is not needed. */
+@media (max-width: 991.98px) {
+  .paper-more {
+    display: none;
+  }
+}
+
+.paper-authors {
+  font-size: 0.88rem;
+}
+
+.paper .paper-summary {
+  font-size: 0.94rem;
+}
+
+/* Wide screens: slightly tighter spacing inside the paper cards, to leave more room for the figure. */
+@media (min-width: 992px) {
+  .paper {
+    padding: 1rem 1.4rem 0.8rem;
+  }
+
+  .paper h3 {
+    margin: 0.25rem 0 0.35rem;
+  }
+
+  .paper p {
+    margin: 0.4rem 0;
+  }
+
+  .paper-more {
+    margin: -0.2rem 0 0;
+  }
+}
+
+/* A paper without a figure shows its whole summary instead, so the card has no empty gap. */
+@media (min-width: 992px) {
+  .paper-browser-on .paper:not(:has(.paper-figure)) .paper-summary {
+    display: block;
+    -webkit-line-clamp: unset;
+    line-clamp: none;
+  }
+}
+
+/* Phones and tablets: the heading takes its own line, with the counter and "All publications" below. */
+@media (max-width: 991.98px) {
+  .papers-head {
+    flex-wrap: wrap;
+    row-gap: 0.25rem;
+  }
+
+  .papers-head h2 {
+    flex: 1 0 100%;
+  }
+
+  .paper-count {
+    margin-left: 0;
+  }
+}
+
+/* Home page: the three columns are see-through, so the background picture shows behind them.
+   Raise the last number in each rgba(...) towards 1 for more solid panels, or lower it towards 0
+   to see more of the picture. */
+#quarto-content:has(.home-columns) {
+  background: transparent;
+}
+
+.home-left,
+.home-right {
+  background: rgba(255, 252, 245, 0.32);
+}
+
+/* The middle column has no tint of its own, and the paper card is half see-through. The slight
+   blur behind the card keeps its text easy to read over the picture. */
+.home-mid {
+  background: transparent;
+}
+
+.paper {
+  background: rgba(255, 255, 255, 0.45);
+  border-color: rgba(0, 105, 62, 0.35);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+}
+
+/* Wide screens: the lines between the three columns, 2 pixels wide and darker green, fading out
+   only near their ends. */
+@media (min-width: 992px) {
+  .home-mid {
+    border-left: 2px solid;
+    border-right: 2px solid;
+    border-image: linear-gradient(to bottom, rgba(0, 105, 62, 0), rgba(0, 105, 62, 0.9) 5%, rgba(0, 105, 62, 0.9) 95%, rgba(0, 105, 62, 0)) 1;
+  }
+}
+
+/* About me page: the interest buttons sit on the left, under the heading. */
+.about-interests p {
+  justify-content: flex-start;
+}
+
+.about-back {
+  margin-top: 2rem;
+}
+
+/* ---------------------------------------------------------------------------------------------
+   Home page, right column: selected projects, one card each, in the same style as the papers. */
+.home-right h2 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+.project {
+  background: rgba(255, 255, 255, 0.45);
+  border: 1px solid rgba(0, 105, 62, 0.35);
+  border-radius: 10px;
+  padding: 0.75rem 1rem 0.45rem;
+  margin-bottom: 0.8rem;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+}
+
+.project-meta {
+  font-size: 0.8rem;
+  color: #5b6b62;
+}
+
+.project h3 {
+  font-size: 0.94rem;
+  line-height: 1.3;
+  margin: 0.25rem 0 0.35rem;
+}
+
+.project h3 .anchorjs-link {
+  display: none;
+}
+
+.project p {
+  font-size: 0.87rem;
+  line-height: 1.45;
+  margin: 0.3rem 0;
+}
+
+.project .btn-sm {
+  margin: 0 0.3rem 0.3rem 0;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+/* Selected projects: each card shows the start of the abstract, fading out at the bottom, and
+   "More →" opens the project's own page with the full text. */
+.project-abstract {
+  position: relative;
+  overflow: hidden;
+  max-height: 11em;
+  -webkit-mask-image: linear-gradient(to bottom, #000 calc(100% - 2.2em), transparent);
+  mask-image: linear-gradient(to bottom, #000 calc(100% - 2.2em), transparent);
+}
+
+.project-abstract p {
+  font-size: 0.85rem;
+  line-height: 1.45;
+  margin: 0 0 0.45rem;
+}
+
+.project h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.project h3 a:hover {
+  color: var(--bs-primary, #00693e);
+  text-decoration: underline;
+}
+
+.project-more {
+  margin: 0 0.6rem 0.3rem 0;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+/* Wide screens: the two project cards together are exactly as tall as the left column. The
+   abstracts take whatever height the titles and buttons leave free; "contain: size" stops the
+   long abstracts from making the column taller. */
+@media (min-width: 992px) {
+  .home-right {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home-right .project,
+  .home-right .project > section {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+  }
+
+  .home-right .project-abstract {
+    flex: 1 1 auto;
+    max-height: none;
+    min-height: 3.6em;
+    contain: size;
+  }
+
+  .home-right .project:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/* Project pages: the table of facts and the buttons at the end. */
+.project-facts {
+  margin: 0.5rem 0 1.75rem;
+  padding: 0.75rem 1rem;
+  background: rgba(226, 243, 230, 0.4);
+  border-left: 3px solid var(--bs-primary, #00693e);
+}
+
+.project-facts p {
+  display: grid;
+  grid-template-columns: 11rem 1fr;
+  gap: 1rem;
+  margin: 0.2rem 0;
+}
+
+.fact-label {
+  font-weight: 600;
+}
+
+@media (max-width: 575.98px) {
+  .project-facts p {
+    grid-template-columns: 1fr;
+    gap: 0;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Project pages: the official titles are long, so the page title is a little smaller. */
+#quarto-content:has(.project-facts) h1.title,
+main:has(.project-facts) > h1 {
+  font-size: 1.75rem;
+  line-height: 1.3;
+}
+
+.project-links p {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.project-links .btn {
+  background: rgba(255, 255, 255, 0.55);
+}
+
+/* The line under each abstract: "More" and the link buttons side by side. */
+.project p:has(> .btn) {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 0.45rem;
+}
+
+/* ---------------------------------------------------------------------------------------------
+   Home page colours: the three columns and the cards in them are see-through light green.
+   The last number in each rgba(...) is how solid it is: towards 1 more solid, towards 0 more
+   see-through. */
+.home-left,
+.home-mid,
+.home-right {
+  background: rgba(200, 228, 207, 0.2);
+}
+
+.paper,
+.project {
+  background: rgba(226, 243, 230, 0.36);
+}
+
+/* "Selected publications" starts where the paper card starts, between the arrows. */
+@media (min-width: 576px) {
+  .papers-head {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+/* Home page, left column: a larger photo, and the role under the name in a darker, firmer type. */
+.home-left > p:first-child img {
+  max-width: 210px;
+}
+
+.home-left .home-subtitle {
+  color: #2b3530;
+  font-weight: 400;
+}
+
+/* Home page, right column: lighter still than the other two, so more of the picture shows. */
+.home-right {
+  background: rgba(170, 210, 182, 0.08);
+}
+
+.home-right .project {
+  background: rgba(196, 226, 204, 0.2);
+}
+
+/* Project cards: bolder titles, and a darker, firmer line with the years, funder and role. */
+.home-right .project h3,
+.home-right .project h3 a,
+.project h3,
+.project h3 a {
+  font-weight: 700 !important;
+}
+
+.project-meta {
+  color: #1f4a32;
+  font-weight: 600;
+  font-size: 0.82rem;
+  letter-spacing: 0.01em;
+}

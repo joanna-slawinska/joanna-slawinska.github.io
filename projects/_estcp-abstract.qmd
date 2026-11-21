@@ -1,0 +1,52 @@
+**Objective.** The variability of the Earth’s weather system on timescales spanning months to several
+years is dominated by fundamental oscillations such as the Madden–Julian Oscillation (MJO), the El
+Niño Southern Oscillation (ENSO), and the Pacific Decadal Oscillation (PDO). These phenomena are
+oftentimes not well-represented in conventional first-principles numerical models, leading to gaps
+in monitoring and forecasting capabilities in the 1-to-10-year forecasting window. By leveraging
+dynamical systems theory and scientific machine learning, the main objective of this project is to
+demonstrate and transition a data-driven computational framework for analysis and prediction of
+natural hazards dynamics on the 1-to-10-year forecasting window that will help bridge these gaps.
+This project will (i) translate a previously developed academic research code to a scalable,
+well-documented Python toolkit with an accessible frontend to Department of Defense (DoD) users; and
+(ii) develop specifications of training data and predictor variables enabling high-fidelity
+identification and prediction of the MJO, ENSO, and Pacific Decadal Variability (PDV). The project
+team will demonstrate this framework through retrospective analyses and real-time forecasts of these
+phenomena and associated conditional statistics of oceanic and atmospheric variables that are
+important for operational planning and resilience of DoD installations. The culminating objective of
+the project is to transition this technology to DoD users working on historical record analyses,
+interannual prediction, and nonstationary trend detection.
+
+**Technology description.** The technology is based on a novel combination of ideas from Koopman
+operator theory for dynamical systems with machine learning methods for kernel operator
+approximation. This framework leads to computational algorithms that can efficiently process
+information from multimodal, unstructured observations over geometrically complex domains to build
+data-driven dynamical operators that encapsulate complex nonlinear phenomena without biases due to
+physics parameterizations and/or coarse mesh resolutions. Spectral decomposition of the dynamical
+operators yields indices (eigenfunctions) adept at capturing coherent oscillatory phenomena such as
+MJO, ENSO, and the PDO, and objectively delineating them from nonstationary trends. Furthermore, the
+dynamical operators enable probabilistic prediction models that can assimilate high-dimensional
+initial conditions in a computationally efficient manner. Using remote sensing, in situ observations
+and reanalysis data for training, the project team will demonstrate this framework by (i) creating
+reconstructions of Sea Surface Temperature, Surface Air Temperature, oceanic circulation,
+atmospheric circulation, and precipitation fields associated with the MJO, ENSO, PDV, and
+1-to-10-year forecasting trends; and (ii) performing a suite of real-time prediction experiments of
+these phenomena over a boreal winter in the second year of the project targeting regions within the
+US Indo-Pacific Command and US Northern Command areas of responsibility with high concentrations of
+DoD installations. The success of these experiments will be judged (i) qualitatively on the basis of
+their ability to provide physically-meaningful, actionable information on key phenomena on the
+1-to-10-year forecasting window; and (ii) quantitatively on the basis of forecast skill metrics for
+individual MJO and ENSO events and physical quantities of interest that depend upon them.
+
+**Benefits.** The technology will provide an effective toolkit in the arsenal of prediction and
+projection frameworks available to the DoD, with a solid focus on phenomena in the challenging
+1-to-10-year forecasting window. Due to its flexible, data-driven nature, the technology is able to
+yield results using modest computational and human resources. In particular, the technology can be
+readily customized to specific use-cases by analysts working individually or in small teams. With
+regards to specific phenomena in the 1-to-10-year forecasting window gap, the technology is expected
+to improve monitoring, data assimilation, and probabilistic forecasting capabilities of the MJO,
+ENSO, PDV, and the 1-to-10-year forecasting window. Given the importance of improved understanding
+and forecasting of these phenomena to operational planning and natural hazard resilience in the 1–10
+year horizon, it is expected that the technology will be widely applicable and yield high return on
+investment in Air Force, Army, Navy, and Joint use-cases. In terms of broader impacts, the
+technology will help popularize and increase the adoption of cutting-edge scientific machine
+learning methodologies to DoD users. (Anticipated Project Completion - 2026)

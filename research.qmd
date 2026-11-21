@@ -1,0 +1,46 @@
+---
+title: "Research"
+subtitle: "What I work on"
+description: "Research interests of Joanna Slawinska."
+---
+
+My research is about finding structure in complex nonlinear systems and using it to predict them. I
+come from computational fluid dynamics and geophysics, and now work mostly at the meeting point of
+dynamical systems, data analysis and quantum-mechanical ideas. Papers are listed on the
+[Publications](publications.qmd) page.
+
+## Data-driven modeling and machine learning
+
+Observations of climate, neural activity or turbulent flows are high-dimensional and noisy. I work on
+ways to reduce them to a few meaningful spatiotemporal patterns and to use those patterns for
+prediction, including extended-range forecasting of the El Niño–Southern Oscillation and the
+identification of the Madden–Julian Oscillation.
+
+## Operator-theoretic methods for nonlinear dynamics
+
+Instead of following individual trajectories, operator-theoretic methods study how a system acts on
+observables. Koopman operators and their spectra give a linear description of nonlinear dynamics,
+which can be learned from data with kernel methods, tensor networks and exterior calculus. I use these
+tools to separate trends, cycles and modes of variability in the climate system, and to analyse
+non-autonomous and skew-product systems.
+
+## Quantum-mechanical approaches and quantum computing
+
+The same operator framework connects classical dynamics to quantum mechanics. I work on embedding
+classical systems in quantum computers, on second quantization of classical nonlinear dynamics, and on
+quantum-mechanical closure and data assimilation, where a quantum formalism is used to model the
+unresolved scales of a classical system.
+
+## Climate and complex systems
+
+My earlier work in atmospheric science covers multiscale interactions in the tropics, cloud and
+precipitation processes in large-eddy simulations, and the climate response to volcanic eruptions. The
+same methods now reach beyond climate to plasmas, sea ice, neuroscience and astrophysics.
+
+## Current projects
+
+- **Data-driven analysis and prediction of weather-to-climate phenomena** — a computational toolkit
+  based on operator-theoretic techniques. DOD grant, 2024–2027, as Co-PI.
+  [Project website](https://nh24-8392.github.io/public-website/).
+- **Quantum information science and Koopman operator theory for plasmas** — improved modeling and
+  understanding of plasmas. DOE grant, 2024–2027, as Co-PI.

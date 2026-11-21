@@ -1,0 +1,55 @@
+---
+title: "Talks"
+description: "Talks and lectures by Joanna Slawinska."
+---
+
+Talks, lectures and posters of the last ten years, newest first.
+
+| Date | Event | Type |
+|---|---|---|
+| Oct 2026 | 2nd Tel Aviv–Dartmouth School on Complexity in Earth Sciences, Tel Aviv University, Israel | Lecture |
+| Sep 2026 | OMDW01 Workshop, *Operator Approaches to Dynamics: New Connections*, Isaac Newton Institute, Cambridge, UK | Invited talk |
+| Oct 2025 | LMAG25 Workshop on Machine Learning, Data Mining and Data Assimilation in Geospace, Johns Hopkins APL, Laurel, MD | Talk |
+| Sep 2025 | EUROGEN 2025, Lahti, Finland | Talk |
+| Aug 2025 | Dartmouth–Tel Aviv University Summer School, Hanover, NH | Lecture |
+| May 2025 | SIAM Conference on Applications of Dynamical Systems, minisymposium on data-driven reconstruction and forecasting, Denver, CO | Invited talk |
+| Apr 2025 | Second Machine Learning and Computer Vision in Heliophysics Conference, Sofia, Bulgaria | Talk |
+| Dec 2024 | Dartmouth Symposium on Energy and Society, Irving Institute, Hanover, NH | Lightning talk |
+| Sep 2024 | 4th Advanced Course and Symposium on Artificial Intelligence and Neuroscience, Italy | Online talk |
+| Jul 2024 | 9th GEWEX Open Science Conference, Sapporo, Japan | Talk |
+| May 2024 | Canadian Hydrographic Conference, St. John's, NL, Canada | Talk |
+| May 2024 | 5th Baltic Earth Conference, Jurmala, Latvia | Poster |
+| Feb 2024 | Quantum Days 2024, Calgary, AB, Canada | Poster |
+| Oct–Nov 2023 | 65th APS Division of Plasma Physics Meeting, mini-conference on plasma and quantum information science, Denver, CO | Invited talk |
+| Oct–Nov 2023 | Astrostatistics in Canada and Beyond, Banff International Research Station, Canada | Talk |
+| Jun 2023 | SIAM Conference on Mathematical and Computational Issues in the Geosciences, Bergen, Norway | Talk |
+| Jun 2023 | 3rd International Workshop on Neurodynamics, Castro Urdiales, Spain | Talk |
+| May 2023 | SIAM Conference on Applications of Dynamical Systems, minisymposium on simulating complex dynamical systems on quantum platforms, Portland, OR | Invited talk |
+| Jul 2021 | SIAM Annual Meeting, minisymposium on mathematics and data science for sea ice, Spokane, WA | Invited talk, online |
+| May 2021 | SIAM Conference on Applications of Dynamical Systems, minisymposium on geometrical and operator-theoretic approaches, Portland, OR | Invited talk, online |
+| Apr 2021 | WE-Heraeus-Seminar on Koopman Methods in Classical and Classical-Quantum Mechanics, Hanau, Germany | Talk, online |
+| Apr 2021 | Institute for Atmospheric and Earth System Research, University of Helsinki, Finland | Seminar, online |
+| Oct 2020 | IBS Center for Climate Physics, Pusan National University, South Korea | Seminar |
+| Feb 2020 | Department of Atmospheric and Oceanic Sciences, University of Wisconsin–Madison | Seminar |
+| Jan 2020 | Department of Mathematical Engineering, Pontifical Catholic University of Chile, Santiago | Talk |
+| Dec 2019 | Simons Foundation conference *Universe: Turbulence Across Vast Scales*, Flatiron Institute, New York, NY | Talk |
+| Oct 2019 | Marie Curie-Skłodowska University, Lublin, Poland | Talk |
+| Oct 2019 | Danish Meteorological Institute, Copenhagen, Denmark | Talk |
+| Jul 2019 | Bureau of Meteorology, Melbourne, Australia | Seminar |
+| Jun 2019 | 25th AMOS Conference (Australian Meteorological and Oceanographic Society), Darwin, Australia | Two talks |
+| Jun 2019 | ICML Workshop *Climate Change: How Can AI Help?*, Long Beach, CA | Poster |
+| May 2019 | SIAM Conference on Dynamical Systems, Snowbird, UT | Talk |
+| Jan 2019 | Climate Dynamics Group, California Institute of Technology, Pasadena, CA | Talk |
+| Dec 2018 | Big Data and Information Analytics 2018, Texas Medical Center, Houston, TX | Invited talk |
+| Sep 2018 | SIAM Conference on Mathematics of Planet Earth, Philadelphia, PA | Talk and poster |
+| Jul 2018 | 9th International Conference on Complex Systems (ICCS), New England Complex Systems Institute, Cambridge, MA | Talk |
+| Jul 2018 | Algebraic Topology in Dynamics and Data, Montana State University, Bozeman, MT | Poster |
+| Jun 2018 | SIAM Conference on Nonlinear Waves and Coherent Structures, Anaheim, CA | Talk and poster |
+| Jun 2018 | 15th Annual Meeting of the Asia Oceania Geosciences Society, Honolulu, HI | Two talks |
+| Apr 2018 | First Northeast Regional Conference on Complex Systems, Binghamton, NY | Talk |
+| Dec 2017 | Time Series Workshop, NIPS, Long Beach, CA | Poster |
+| Jun 2017 | Department of Physics, University of Wisconsin–Milwaukee | Talk |
+| Apr 2017 | SIAM International Conference on Data Mining, Workshop on Mining Big Data in Climate and Environment, Houston, TX | Talk |
+| Jan–Feb 2017 | Workshop on Data-Driven Methods for Reduced-Order Modeling and SPDEs, Banff International Research Station, Canada | Talk |
+| Jan 2017 | Dynamical Systems and Nonlinear Control Group, UC Santa Barbara, CA | Talk |
+| Dec 2016 | 49th AGU Fall Meeting, San Francisco, CA | Poster |
