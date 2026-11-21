@@ -1,0 +1,44 @@
+# Site settings. Everything marked CHANGE needs your own text.
+project:
+  type: website
+  # Files used only from scripts or from styles.css, which Quarto cannot find by itself.
+  resources:
+    - images/**
+    - papers.js
+
+website:
+  title: "Joanna Slawinska"
+  description: "Personal website of Joanna Slawinska, Department of Mathematics, Dartmouth College."
+  # The public address of the site. Fill this in once the site is published; it switches on the blog feed.
+  # site-url: "https://your-username.github.io/"
+  navbar:
+    title: "Joanna Slawinska"
+    collapse-below: lg
+    left:
+      - text: "Research"
+        href: research.qmd
+      - text: "Publications"
+        href: publications.qmd
+      - text: "Talks"
+        href: talks.qmd
+      - text: "Blog"
+        href: blog/index.qmd
+    right:
+      # CHANGE the addresses, or delete the lines you do not want.
+      - icon: envelope
+        href: "mailto:joanna.m.slawinska@dartmouth.edu"
+        aria-label: Email
+      - icon: linkedin
+        href: https://www.linkedin.com/in/joanna-slawinska-dartmouth/
+        aria-label: LinkedIn
+  page-footer:
+    left: "© 2026 Joanna Slawinska"
+    right: "Built with [Quarto](https://quarto.org)"
+
+format:
+  html:
+    theme:
+      - cosmo        # the Bootswatch theme the site starts from
+      - theme.scss   # your own colours, set in that file
+    css: styles.css
+    toc: true
