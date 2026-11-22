@@ -23,7 +23,7 @@
       // Quarto puts the title and everything after it in a <section>; look inside it too.
       var box = p.querySelector(":scope > section") || p;
       var summary = Array.prototype.find.call(box.children, function (el) {
-        return el.tagName === "P" && !el.querySelector(".paper-meta, .paper-authors, .paper-tag, .btn");
+        return el.tagName === "P" && !el.querySelector(".paper-meta, .paper-authors, .btn");
       });
       if (!summary) { return; }
       summary.classList.add("paper-summary");
@@ -37,14 +37,42 @@
         var open = p.classList.toggle("is-open");
         more.textContent = open ? "Less" : "More";
         more.setAttribute("aria-expanded", open ? "true" : "false");
+        updateMore(p);
       });
+      // A "paper-fill" card is sized from its figure, so measure again once the figure has loaded.
+      var img = p.classList.contains("paper-fill") && p.querySelector(".paper-figure-img img");
+      if (img) {
+        img.addEventListener("load", function () {
+          if (p.classList.contains("is-current")) { updateMore(p); }
+        });
+      }
     });
+
+    // A paper marked "paper-fill" (one with a wide, short figure) shows as many lines of its
+    // summary as fit in the room the figure does not need at its full width, instead of four.
+    var wide = window.matchMedia("(min-width: 992px)");
+    function fitSummary(p, summary) {
+      summary.style.removeProperty("--summary-lines");
+      if (!p.classList.contains("paper-fill") || p.classList.contains("is-open") || !wide.matches) {
+        return;
+      }
+      var img = p.querySelector(".paper-figure-img img");
+      if (!img || !img.naturalWidth) { return; }
+      var box = img.parentNode, cs = window.getComputedStyle(summary);
+      var lh = parseFloat(cs.lineHeight) || 1.5 * parseFloat(cs.fontSize);
+      var spare = box.clientHeight - box.clientWidth * img.naturalHeight / img.naturalWidth;
+      summary.style.setProperty("--summary-lines", 4 + Math.max(0, Math.floor(spare / lh)));
+    }
 
     function updateMore(p) {
       var summary = p.querySelector(".paper-summary"), more = p.querySelector(".paper-more");
       if (!summary || !more) { return; }
-      var cut = summary.scrollHeight > summary.clientHeight + 2;
-      more.hidden = !(cut || p.classList.contains("is-open"));
+      // Twice: showing or hiding "More" changes the room left for the summary.
+      for (var i = 0; i < 2; i++) {
+        fitSummary(p, summary);
+        var cut = summary.scrollHeight > summary.clientHeight + 2;
+        more.hidden = !(cut || p.classList.contains("is-open"));
+      }
     }
 
     var stage = document.createElement("div");
@@ -122,7 +150,57 @@
     render(0);
   }
 
+  // 2. Paper figures: click (or tap, or Enter) to see the figure large; click again or Esc to close.
+  function zoomable() {
+    var imgs = document.querySelectorAll(".paper-figure-img img");
+    if (!imgs.length) { return; }
+    var box = document.createElement("div");
+    box.className = "figure-zoom";
+    box.hidden = true;
+    box.setAttribute("role", "dialog");
+    box.setAttribute("aria-modal", "true");
+    box.setAttribute("aria-label", "Enlarged figure");
+    var close = document.createElement("button");
+    close.type = "button";
+    close.className = "figure-zoom-close";
+    close.setAttribute("aria-label", "Close enlarged figure");
+    close.innerHTML = "&times;";
+    var big = document.createElement("img");
+    var cap = document.createElement("p");
+    box.appendChild(close); box.appendChild(big); box.appendChild(cap);
+    document.body.appendChild(box);
+    var opener = null;
+    function hide() {
+      if (box.hidden) { return; }
+      box.hidden = true;
+      big.removeAttribute("src");
+      if (opener) { opener.focus(); }
+    }
+    function show(img) {
+      opener = img;
+      big.src = img.currentSrc || img.src;
+      big.alt = img.alt;
+      var fc = img.closest("figure") && img.closest("figure").querySelector("figcaption");
+      cap.textContent = fc ? fc.textContent : "";
+      box.hidden = false;
+      close.focus();
+    }
+    box.addEventListener("click", hide);
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape") { hide(); } });
+    Array.prototype.forEach.call(imgs, function (img) {
+      img.classList.add("is-zoomable");
+      img.tabIndex = 0;
+      img.setAttribute("role", "button");
+      img.title = "Click to enlarge";
+      img.addEventListener("click", function () { show(img); });
+      img.addEventListener("keydown", function (e) {
+        if (e.key === "Enter" || e.key === " ") { e.preventDefault(); show(img); }
+      });
+    });
+  }
+
   function start() {
+    zoomable();
     var roots = document.querySelectorAll(".paper-browser");
     for (var i = 0; i < roots.length; i++) { init(roots[i]); }
   }

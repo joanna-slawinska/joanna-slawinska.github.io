@@ -13,7 +13,7 @@ Newest first. Links go to the published version or the preprint. A complete list
 
 1. Das, S., D. Giannakis, Y. Gu, and **J. Slawinska**, 2026: Learning Dynamical Systems with the Spectral Exterior Calculus. SIAM Journal on Applied Dynamical Systems. In Print. <https://arxiv.org/abs/2505.06061>.
 2. Carr, T., D. Giannakis, B. R. Lintner, **J. Slawinska**, and C. C. Ummenhofer, 2026: A Koopman Interpretation of the recharge oscillator model for ENSO. Journal of Climate, 39, 3905-3930. [doi:10.1175/JCLI-D-25-0527.1](https://doi.org/10.1175/JCLI-D-25-0527.1)
-3. Giannakis, D., M. M. L. Jebelli, M. Montgomery, P. Pfeffer, J. Schumacher, and **J. Slawinska**, 2026: Second quantization for classical nonlinear dynamics. *Nonlinearity*, 39, 115006 (open access). [arXiv:2501.07419](https://arxiv.org/abs/2501.07419).
+3. Giannakis, D., M. M. L. Jebelli, M. Montgomery, P. Pfeffer, J. Schumacher, and **J. Slawinska**, 2026: Second quantization for classical nonlinear dynamics. *Nonlinearity*, 39, 115006 (open access). [doi:10.1088/1361-6544/aea8b9](https://doi.org/10.1088/1361-6544/aea8b9). [arXiv:2501.07419](https://arxiv.org/abs/2501.07419).
 4. Vales, Ch., D. C. Freeman, **J. Slawinska**, and D. Giannakis, 2026: Quantum mechanical closure of partial differential equations with symmetries. Journal of Computational Physics, Volume 562. [doi:10.1016/j.jcp.2026.114992](https://doi.org/10.1016/j.jcp.2026.114992).
 
 #### 2025

@@ -11,7 +11,8 @@
        paragraph      a short summary (or paste your abstract instead)
        figure         from the line ```{=html} to the next ``` : the picture in images/papers/,
                       a description of it for readers who cannot see it (alt="..."), and the
-                      caption under it
+                      caption under it, which ends with the credit (the paper it comes from,
+                      and the copyright or licence notice where the publisher asks for one)
        tags line      the topic labels
        last line      the link buttons
 
@@ -38,13 +39,12 @@ the Stepanoff flow and the Lorenz 63 system, and connects naturally to quantum c
 ```{=html}
 <figure class="paper-figure">
   <div class="paper-figure-img"><img src="images/papers/second-quantization.jpg" alt="Six panels showing the real and imaginary parts of three approximate Koopman eigenfunctions on the torus, each made of swirling red and blue bands." loading="lazy"></div>
-  <figcaption>Figure 4 · Eigenfunctions of the regularized generator for the Stepanoff flow</figcaption>
+  <figcaption>Figure 4 · Eigenfunctions of the regularized generator for the Stepanoff flow <span class="paper-credit">From Giannakis et al., arXiv:2501.07419.</span></figcaption>
 </figure>
 ```
 
-[Quantum]{.paper-tag} [Koopman operators]{.paper-tag}
-
 [arXiv:2501.07419](https://arxiv.org/abs/2501.07419){.btn .btn-outline-primary .btn-sm}
+[doi:10.1088/1361-6544/aea8b9](https://doi.org/10.1088/1361-6544/aea8b9){.btn .btn-outline-primary .btn-sm}
 :::
 
 ::: {.paper}
@@ -61,12 +61,10 @@ system. We prove convergence in the limit of large data and illustrate the metho
 
 ```{=html}
 <figure class="paper-figure">
-  <div class="paper-figure-img"><img src="images/papers/spectral-exterior-calculus.jpg" alt="Quiver plots of three vector fields on the circle, a rotation, an arc with a fixed point and a variable-speed rotation, with the true fields in red above and the learned ones in blue below." loading="lazy"></div>
-  <figcaption>Figure 2 · True (red) and SEC-approximated (blue) vector fields on the circle</figcaption>
+  <div class="paper-figure-img"><img src="images/papers/spectral-exterior-calculus.jpg" alt="Six 3D quiver plots of vector fields on a torus: rational rotation, irrational rotation and the Stepanoff flow, with the true fields in red above and the SEC-approximated fields in blue below." loading="lazy"></div>
+  <figcaption>Figure 7 · True and SEC-approximated vector fields on the 2-torus <span class="paper-credit">From Das et al., arXiv:2505.06061.</span></figcaption>
 </figure>
 ```
-
-[Machine learning]{.paper-tag} [Geometry]{.paper-tag}
 
 [arXiv:2505.06061](https://arxiv.org/abs/2505.06061){.btn .btn-outline-primary .btn-sm}
 :::
@@ -78,19 +76,25 @@ system. We prove convergence in the limit of large data and illustrate the metho
 
 [T. Carr, D. Giannakis, B. R. Lintner, **J. Slawinska** and C. C. Ummenhofer]{.paper-authors}
 
-The recharge oscillator describes ENSO with two coupled equations for equatorial sea surface
-temperature and thermocline depth, but it is ambiguous about what makes El Niño and La Niña
-asymmetric. We treat the two quantities as observables of a dynamical system and model their
-evolution with the Koopman operator. ENSO is still a single eigenmode, but a learned nonlinear one,
-so it can evolve asymmetrically. A simple model built on this eigenmode reproduces key asymmetries
-in the CESM2 preindustrial simulation: El Niños decay faster in spring, multiyear La Niñas are more
-common, and La Niña anomalies sit further west. The framework may help explain why climate models
-disagree about how ENSO will change.
+El Niños tend to be stronger and shorter than La Niñas, and the main causes of this asymmetry are
+still debated. The recharge oscillator, the standard conceptual model of ENSO, couples two equations
+for equatorial sea surface temperature and thermocline depth; it explains how events grow, decay and
+change phase, but it is ambiguous about asymmetry. We sidestep part of that question by treating temperature and
+thermocline depth as observables of a dynamical system, rather than as its state, and modeling their
+evolution with the Koopman operator. ENSO is still a single eigenmode, as in the recharge oscillator,
+but a learned nonlinear function of the observables, so it can evolve asymmetrically. The model
+emulates the observed evolution and needs no assumption about which physical processes matter most.
+A simple model built on this eigenmode reproduces leading features of the asymmetry in the CESM2
+preindustrial simulation: El Niños decay faster in spring, multiyear La Niñas are more common, and
+La Niña anomalies sit further west. The framework may help explain why climate models disagree about
+how ENSO will change in the future.
 
-<!-- No figure yet. To add one, save it as images/papers/recharge-oscillator.jpg and copy the figure block
-     from another paper here, changing the file name, the description and the caption. -->
-
-[Climate]{.paper-tag} [ENSO]{.paper-tag} [Koopman operators]{.paper-tag}
+```{=html}
+<figure class="paper-figure">
+  <div class="paper-figure-img"><img src="images/papers/recharge-oscillator.jpg" alt="Four panels comparing linear and nonlinear embeddings of ENSO phase space for April and October, with blue-to-red contours and arrows showing forecast error vectors." loading="lazy"></div>
+  <figcaption>Figure 5 · Nonlinear embedding reduces deterministic forecast bias <span class="paper-credit">From Carr et al., <em>J. Climate</em> 39, 3905&ndash;3930. &copy; 2026 American Meteorological Society.</span></figcaption>
+</figure>
+```
 
 [doi:10.1175/JCLI-D-25-0527.1](https://doi.org/10.1175/JCLI-D-25-0527.1){.btn .btn-outline-primary .btn-sm}
 :::
@@ -111,38 +115,35 @@ including from initial conditions it was not trained on.
 
 ```{=html}
 <figure class="paper-figure">
-  <div class="paper-figure-img"><img src="images/papers/closure-pde-symmetries.jpg" alt="Six space-time heatmaps of eigenfunctions, with tilted red and blue stripes that steepen as the parameter delta increases." loading="lazy"></div>
-  <figcaption>Figure 1 · Space-time heatmaps of kernel eigenfunctions used by the closure</figcaption>
+  <div class="paper-figure-img"><img src="images/papers/closure-pde-symmetries.jpg" alt="Four line plots of the final spatial profile of the height and momentum fields, true versus predicted, with dashed curves for the subgrid fluxes." loading="lazy"></div>
+  <figcaption>Figure 4 · True and predicted spatial profiles of the resolved state and subgrid fluxes <span class="paper-credit">From Vales et al., arXiv:2505.07519.</span></figcaption>
 </figure>
 ```
-
-[Quantum]{.paper-tag} [Closure]{.paper-tag} [Fluids]{.paper-tag}
 
 [doi:10.1016/j.jcp.2026.114992](https://doi.org/10.1016/j.jcp.2026.114992){.btn .btn-outline-primary .btn-sm}
 [arXiv:2505.07519](https://arxiv.org/abs/2505.07519){.btn .btn-outline-primary .btn-sm}
 :::
 
-::: {.paper}
+::: {.paper .paper-fill}
 [2025 · preprint, in revision]{.paper-meta}
 
 ### Tensor network approximation of Koopman operators
 
 [D. Giannakis, M. J. Latifi Jebelli, M. Montgomery, P. Pfeffer, J. Schumacher and **J. Slawinska**]{.paper-authors}
 
-A tensor network scheme for approximating how observables of measure-preserving ergodic systems
-evolve. A regularized Koopman generator on a reproducing kernel Hilbert space is lifted to a Fock
-space, where it acts multiplicatively under the tensor product, and the evolution becomes the
-evaluation of a tree tensor network. From a modest set of eigenfunctions, this quantum-inspired
-approximation draws on a tensor product space of very large dimension, and it preserves positivity.
+A tensor network scheme for the evolution of observables of ergodic systems. A regularized Koopman
+generator is lifted to a Fock space, where the evolution is computed by a positivity-preserving tree
+tensor network drawing on a space of dimension (2*d* + 1)^*n*^ from 2*d* + 1 eigenfunctions. With
+classical observables and densities as quantum observables and states, it shares the mathematics of
+many-body quantum physics and opens a route to quantum computers; the open step is recasting its
+non-unitary comultiplication operators as quantum gates.
 
 ```{=html}
 <figure class="paper-figure">
-  <div class="paper-figure-img"><img src="images/papers/tensor-network.jpg" alt="Schematic with two rows, quantum states above and observables below, showing the approximation from the Hilbert space to a reproducing kernel Hilbert algebra and then to a Fock space." loading="lazy"></div>
-  <figcaption>Figure 1 · Evolution of quantum states and observables, from Hilbert space to Fock space</figcaption>
+  <div class="paper-figure-img"><img src="images/papers/tensor-network.jpg" alt="Diagram of a tree tensor network, with rows of linked blue nodes branching inward from both sides toward a central pair of nodes." loading="lazy"></div>
+  <figcaption>Figure 4 · Tree tensor network used to compute the Fock space evolution <span class="paper-credit">From Giannakis et al., arXiv:2407.07242.</span></figcaption>
 </figure>
 ```
-
-[Quantum]{.paper-tag} [Koopman operators]{.paper-tag}
 
 [arXiv:2407.07242](https://arxiv.org/abs/2407.07242){.btn .btn-outline-primary .btn-sm}
 :::
@@ -162,12 +163,10 @@ glaciation cycles, where the 40,000-year cycle is recovered from benthic δ¹⁸
 
 ```{=html}
 <figure class="paper-figure">
-  <div class="paper-figure-img"><img src="images/papers/trends-and-cycles.jpg" alt="Panels of time series, a bar chart and spectra from the analysis of benthic oxygen isotope data, separating a trend from oscillations with periods near 41,000 and 100,000 years." loading="lazy"></div>
-  <figcaption>Figure 10 · Trend and glacial cycles in the δ¹⁸O record of the past 3 million years</figcaption>
+  <div class="paper-figure-img"><img src="images/papers/trends-and-cycles.jpg" alt="A rainbow-coloured cylinder (Model F) and a nested torus (Model F′) wrapped by black trajectories, linked to two eigenfunction time series: a high-frequency oscillation that switches off and a low-frequency oscillation that switches on." loading="lazy"></div>
+  <figcaption>Figure 1 · Models of frequency switching (Model F) and co-existing frequencies (Model F′) <span class="paper-credit">From Froyland et al., arXiv:2308.04045.</span></figcaption>
 </figure>
 ```
-
-[Climate]{.paper-tag} [Koopman operators]{.paper-tag}
 
 [doi:10.1038/s41467-024-48033-6](https://doi.org/10.1038/s41467-024-48033-6){.btn .btn-outline-primary .btn-sm}
 [arXiv:2308.04045](https://arxiv.org/abs/2308.04045){.btn .btn-outline-primary .btn-sm}
@@ -190,11 +189,9 @@ automatically.
 ```{=html}
 <figure class="paper-figure">
   <div class="paper-figure-img"><img src="images/papers/quantum-closure.jpg" alt="Two butterfly-shaped Lorenz attractor trajectories side by side, the true system on the left and the closure model on the right." loading="lazy"></div>
-  <figcaption>Figure 2 · Lorenz 63 trajectories: true dynamics (a) and the quantum mechanical closure (b)</figcaption>
+  <figcaption>Figure 2 · Lorenz 63 trajectories: true dynamics (a) and the quantum mechanical closure (b) <span class="paper-credit">From Freeman et al., <em>Multiscale Model. Simul.</em> 22, 283. © 2024 Society for Industrial and Applied Mathematics.</span></figcaption>
 </figure>
 ```
-
-[Quantum]{.paper-tag} [Closure]{.paper-tag}
 
 [doi:10.1137/22M1514246](https://doi.org/10.1137/22M1514246){.btn .btn-outline-primary .btn-sm}
 [arXiv:2208.03390](https://arxiv.org/abs/2208.03390){.btn .btn-outline-primary .btn-sm}
@@ -216,11 +213,9 @@ subspaces, and helps characterize coherent structures under skew-product dynamic
 ```{=html}
 <figure class="paper-figure">
   <div class="paper-figure-img"><img src="images/papers/skew-product.jpg" alt="Five small heatmaps of curved banded patterns produced by an eigenoperator of a skew-product system." loading="lazy"></div>
-  <figcaption>Figure 2 · Real part of an eigenoperator of the skew-product system</figcaption>
+  <figcaption>Figure 2 · Real part of an eigenoperator of the skew-product system <span class="paper-credit">From Giannakis et al., arXiv:2307.08965.</span></figcaption>
 </figure>
 ```
-
-[Koopman operators]{.paper-tag} [Operator algebras]{.paper-tag}
 
 [arXiv:2307.08965](https://arxiv.org/abs/2307.08965){.btn .btn-outline-primary .btn-sm}
 :::
@@ -240,11 +235,9 @@ an operator-theoretic picture of the oscillation to set beside the conventional 
 ```{=html}
 <figure class="paper-figure">
   <div class="paper-figure-img"><img src="images/papers/mjo.jpg" alt="Two phase-space plots of the Madden–Julian Oscillation; the Koopman version on the right traces much smoother circles than the RMM index on the left, with two MJO events highlighted." loading="lazy"></div>
-  <figcaption>Figure 1 · MJO phase space from the RMM index (left) and from Koopman eigenfunctions (right)</figcaption>
+  <figcaption>Figure 1 · MJO phase space from the RMM index (left) and from Koopman eigenfunctions (right) <span class="paper-credit">From Lintner et al., <em>Geophys. Res. Lett.</em> 50, e2023GL102743.</span></figcaption>
 </figure>
 ```
-
-[Climate]{.paper-tag} [MJO]{.paper-tag} [Koopman operators]{.paper-tag}
 
 [doi:10.1029/2023GL102743](https://doi.org/10.1029/2023GL102743){.btn .btn-outline-primary .btn-sm}
 :::
@@ -266,11 +259,9 @@ from the ICEX 2018 campaign are discussed.
 ```{=html}
 <figure class="paper-figure">
   <div class="paper-figure-img"><img src="images/papers/floe-fracture.jpg" alt="A row of square ice floes with random thickness patterns, and below them the cracks computed for each floe." loading="lazy"></div>
-  <figcaption>Figure 3 · Random ice-thickness fields (top) and the fractures they produce (bottom)</figcaption>
+  <figcaption>Figure 3 · Random ice-thickness fields (top) and the fractures they produce (bottom) <span class="paper-credit">From Dinh et al., <em>The Cryosphere</em> 17, 3883.</span></figcaption>
 </figure>
 ```
-
-[Sea ice]{.paper-tag} [Numerical modeling]{.paper-tag}
 
 [doi:10.5194/tc-17-3883-2023](https://doi.org/10.5194/tc-17-3883-2023){.btn .btn-outline-primary .btn-sm}
 :::
@@ -293,11 +284,9 @@ in a climate model.
 ```{=html}
 <figure class="paper-figure">
   <div class="paper-figure-img"><img src="images/papers/data-assimilation.jpg" alt="Two line plots against lead time up to 12 months: normalized error and forecast spread on the left, anomaly correlation on the right." loading="lazy"></div>
-  <figcaption>Figure 5 · Skill of quantum mechanical data assimilation forecasts of Niño 3.4</figcaption>
+  <figcaption>Figure 5 · Skill of quantum mechanical data assimilation forecasts of Niño 3.4 <span class="paper-credit">From Freeman et al., <em>Proc. Natl. Acad. Sci.</em> 120, e2211115120.</span></figcaption>
 </figure>
 ```
-
-[Quantum]{.paper-tag} [Data assimilation]{.paper-tag} [ENSO]{.paper-tag}
 
 [doi:10.1073/pnas.2211115120](https://doi.org/10.1073/pnas.2211115120){.btn .btn-outline-primary .btn-sm}
 [arXiv:2206.13659](https://arxiv.org/abs/2206.13659){.btn .btn-outline-primary .btn-sm}
@@ -320,11 +309,9 @@ on the IBM Quantum System One.
 ```{=html}
 <figure class="paper-figure">
   <div class="paper-figure-img"><img src="images/papers/quantum-computer.jpg" alt="Diagram with columns for states and observables, stepping down from classical and classical statistical representations to quantum mechanical, matrix mechanical and quantum computational ones." loading="lazy"></div>
-  <figcaption>Figure 2 · The quantum embedding of classical dynamics, from classical to quantum computational</figcaption>
+  <figcaption>Figure 2 · The quantum embedding of classical dynamics, from classical to quantum computational <span class="paper-credit">From Giannakis et al., <em>Phys. Rev. A</em> 105, 052404. © 2022 American Physical Society.</span></figcaption>
 </figure>
 ```
-
-[Quantum]{.paper-tag} [Quantum computing]{.paper-tag}
 
 [doi:10.1103/PhysRevA.105.052404](https://doi.org/10.1103/PhysRevA.105.052404){.btn .btn-outline-primary .btn-sm}
 [arXiv:2012.06097](https://arxiv.org/abs/2012.06097){.btn .btn-outline-primary .btn-sm}
@@ -346,11 +333,9 @@ composites of the ENSO life cycle.
 ```{=html}
 <figure class="paper-figure">
   <div class="paper-figure-img"><img src="images/papers/climate-spectral-analysis.jpg" alt="Circular phase-space diagram with eight ENSO phases arranged around it, each with a small map of the tropical Pacific, running from El Niño to La Niña and back." loading="lazy"></div>
-  <figcaption>Figure 1 · The ENSO lifecycle recovered from an eigenfunction of the generator</figcaption>
+  <figcaption>Figure 1 · The ENSO lifecycle recovered from an eigenfunction of the generator <span class="paper-credit">From Froyland et al., <em>Nat. Commun.</em> 12, 6570.</span></figcaption>
 </figure>
 ```
-
-[Climate]{.paper-tag} [ENSO]{.paper-tag} [Koopman operators]{.paper-tag}
 
 [doi:10.1038/s41467-021-26357-x](https://doi.org/10.1038/s41467-021-26357-x){.btn .btn-outline-primary .btn-sm}
 [arXiv:2104.02902](https://arxiv.org/abs/2104.02902){.btn .btn-outline-primary .btn-sm}
@@ -372,11 +357,9 @@ Examples include a torus rotation and the Lorenz 63 and Rössler systems.
 ```{=html}
 <figure class="paper-figure">
   <div class="paper-figure-img"><img src="images/papers/rkhs-compactification.jpg" alt="Three Lorenz attractors coloured by eigenfunction values, with the corresponding oscillating time series below each." loading="lazy"></div>
-  <figcaption>Figure 7 · Eigenfunctions of the data-driven generator for the Lorenz 63 system</figcaption>
+  <figcaption>Figure 7 · Eigenfunctions of the data-driven generator for the Lorenz 63 system <span class="paper-credit">From Das et al., <em>Appl. Comput. Harmon. Anal.</em> 54, 75.</span></figcaption>
 </figure>
 ```
-
-[Koopman operators]{.paper-tag} [Kernel methods]{.paper-tag}
 
 [doi:10.1016/j.acha.2021.02.004](https://doi.org/10.1016/j.acha.2021.02.004){.btn .btn-outline-primary .btn-sm}
 [arXiv:1808.01515](https://arxiv.org/abs/1808.01515){.btn .btn-outline-primary .btn-sm}
@@ -397,11 +380,9 @@ and space together, where conventional tools work in one domain at a time.
 ```{=html}
 <figure class="paper-figure">
   <div class="paper-figure-img"><img src="images/papers/neuroscience.jpg" alt="Six colour maps of the cortical surface at times from 10 to 130 milliseconds, with frontal, parietal and auditory regions labelled." loading="lazy"></div>
-  <figcaption>Figure 4 · Brain-surface maps of the response to a deviant sound, from Koopman eigenfunctions</figcaption>
+  <figcaption>Figure 4 · Brain-surface maps of the response to a deviant sound, from Koopman eigenfunctions <span class="paper-credit">From Marrouch et al., <em>Ann. Math. Artif. Intell.</em> 88, 1155.</span></figcaption>
 </figure>
 ```
-
-[Neuroscience]{.paper-tag} [Koopman operators]{.paper-tag}
 
 [doi:10.1007/s10472-019-09666-2](https://doi.org/10.1007/s10472-019-09666-2){.btn .btn-outline-primary .btn-sm}
 :::
@@ -421,14 +402,38 @@ start of the forecast, extending useful skill to longer lead times.
 ```{=html}
 <figure class="paper-figure">
   <div class="paper-figure-img"><img src="images/papers/enso-prediction.jpg" alt="Error and pattern-correlation curves against lead time, and time series comparing forecasts with the observed Niño 3.4 index at lead times of 0 to 9 months." loading="lazy"></div>
-  <figcaption>Figure 1 · Kernel analog forecasts of the Niño 3.4 index, 1998–2017</figcaption>
+  <figcaption>Figure 1 · Kernel analog forecasts of the Niño 3.4 index, 1998–2017 <span class="paper-credit">From Wang et al., <em>Sci. Rep.</em> 10, 2636.</span></figcaption>
 </figure>
 ```
 
-[Climate]{.paper-tag} [ENSO]{.paper-tag} [Forecasting]{.paper-tag}
-
 [doi:10.1038/s41598-020-59128-7](https://doi.org/10.1038/s41598-020-59128-7){.btn .btn-outline-primary .btn-sm}
 [arXiv:1906.09492](https://arxiv.org/abs/1906.09492){.btn .btn-outline-primary .btn-sm}
+:::
+
+::: {.paper}
+[2019 · ICML Workshop “Climate Change: How Can AI Help?”]{.paper-meta}
+
+### A quantum mechanical approach for data assimilation in climate dynamics
+
+[**J. Slawinska**, A. Ourmazd and D. Giannakis]{.paper-authors}
+
+Data assimilation alternates forecasts with corrections from new observations, much as a quantum
+system alternates smooth evolution with measurement. We use that formalism directly. The Koopman
+operator, which governs how observables evolve, plays the part of the Heisenberg evolution operator,
+and a quantum mechanical density operator holds the current state of knowledge. The scheme is fully
+empirical: the evolution and measurement operators are matrices in a basis learned from time-ordered
+observations, with no model of the dynamics. Applied to the Niño 3.4 index of ENSO in a comprehensive
+climate model, it gives promising results.
+
+```{=html}
+<figure class="paper-figure">
+  <div class="paper-figure-img"><img src="images/papers/qmda-icml2019.jpg" alt="Two contour panels covering 300 months, showing the forecast probability of the Niño 3.4 index over time, with red markers at the observations." loading="lazy"></div>
+  <figcaption>Figure 2 · Quantum mechanical data assimilation of the Niño 3.4 index in CCSM4 <span class="paper-credit">From Slawinska et al., ICML 2019 workshop “Climate Change: How Can AI Help?”.</span></figcaption>
+</figure>
+```
+
+[Paper (NSF PAR)](https://par.nsf.gov/biblio/10111830){.btn .btn-outline-primary .btn-sm}
+[Workshop page](https://www.climatechange.ai/papers/icml2019/7){.btn .btn-outline-primary .btn-sm}
 :::
 
 ::: {.paper}
@@ -448,11 +453,9 @@ the Kuramoto–Sivashinsky model.
 ```{=html}
 <figure class="paper-figure">
   <div class="paper-figure-img"><img src="images/papers/vector-valued.jpg" alt="A row of space-time heatmaps: the raw Kuramoto–Sivashinsky data followed by patterns recovered with vector-valued spectral analysis and with nonlinear Laplacian spectral analysis." loading="lazy"></div>
-  <figcaption>Figure 2 · Kuramoto–Sivashinsky data and the patterns found by VSA and by NLSA</figcaption>
+  <figcaption>Figure 2 · Kuramoto–Sivashinsky data and the patterns found by VSA and by NLSA <span class="paper-credit">From Giannakis et al., <em>J. Nonlinear Sci.</em> 29, 2385.</span></figcaption>
 </figure>
 ```
-
-[Pattern extraction]{.paper-tag} [Kernel methods]{.paper-tag}
 
 [doi:10.1007/s00332-019-09548-1](https://doi.org/10.1007/s00332-019-09548-1){.btn .btn-outline-primary .btn-sm}
 [arXiv:1711.02798](https://arxiv.org/abs/1711.02798){.btn .btn-outline-primary .btn-sm}
@@ -474,11 +477,9 @@ teleconnections with ENSO in the tropical Indo-Pacific.
 ```{=html}
 <figure class="paper-figure">
   <div class="paper-figure-img"><img src="images/papers/antarctic-circumpolar-wave.jpg" alt="Eight polar maps of Antarctica showing reconstructed sea ice concentration anomalies for the wavenumber-2 and wavenumber-3 circumpolar wave modes, in a model and in observations." loading="lazy"></div>
-  <figcaption>Figure 3 · Reconstructed Antarctic sea ice anomalies from the circumpolar wave modes</figcaption>
+  <figcaption>Figure 3 · Reconstructed Antarctic sea ice anomalies from the circumpolar wave modes <span class="paper-credit">From Wang et al., <em>Int. J. Climatol.</em> 39, 1026.</span></figcaption>
 </figure>
 ```
-
-[Climate]{.paper-tag} [Southern Ocean]{.paper-tag}
 
 [doi:10.1002/joc.5860](https://doi.org/10.1002/joc.5860){.btn .btn-outline-primary .btn-sm}
 [arXiv:1805.05525](https://arxiv.org/abs/1805.05525){.btn .btn-outline-primary .btn-sm}
@@ -501,14 +502,51 @@ rainfall over Australia.
 ```{=html}
 <figure class="paper-figure">
   <div class="paper-figure-img"><img src="images/papers/indo-pacific-2.jpg" alt="Grid of Indo-Pacific maps every four months, with columns for sea surface temperature, surface winds and mixed-layer depth anomalies." loading="lazy"></div>
-  <figcaption>Figure 1 · SST, surface wind and mixed-layer depth through an El Niño event in CCSM4</figcaption>
+  <figcaption>Figure 1 · SST, surface wind and mixed-layer depth through an El Niño event in CCSM4 <span class="paper-credit">From Giannakis and Slawinska, <em>J. Climate</em> 31, 693.</span></figcaption>
 </figure>
 ```
 
-[Climate]{.paper-tag} [ENSO]{.paper-tag}
-
 [doi:10.1175/JCLI-D-17-0031.1](https://doi.org/10.1175/JCLI-D-17-0031.1){.btn .btn-outline-primary .btn-sm}
 [arXiv:1609.09185](https://arxiv.org/abs/1609.09185){.btn .btn-outline-primary .btn-sm}
+:::
+
+::: {.paper}
+[2018 · IEEE Statistical Signal Processing Workshop, 338–342]{.paper-meta}
+
+### A new approach to signal processing of spatiotemporal data
+
+[**J. Slawinska**, A. Ourmazd and D. Giannakis]{.paper-authors}
+
+A conference account, written for the signal processing community, of vector-valued spectral
+analysis. Classical tools such as principal component analysis compare whole snapshots of a signal
+and return separate spatial and temporal modes. Here a spatiotemporal signal is treated as a
+vector-valued observable of a dynamical system, and data points are compared with an
+operator-valued kernel, combined with delay embedding, that takes both the temporal and the spatial
+degrees of freedom into account. The patterns it returns need not split into a spatial part and a
+temporal part, so a few of them can represent signals that are intermittent in both space and time.
+The full theory and further examples are in the *Journal of Nonlinear Science* paper listed above.
+
+[doi:10.1109/SSP.2018.8450704](https://doi.org/10.1109/SSP.2018.8450704){.btn .btn-outline-primary .btn-sm}
+:::
+
+::: {.paper}
+[2018 · International Joint Conference on Neural Networks (IJCNN), 1–10]{.paper-meta}
+
+### Data-driven spectral decomposition of ECoG signal from an auditory oddball experiment in a marmoset monkey: Implications for EEG data in humans
+
+[N. Marrouch, H. Read, **J. Slawinska** and D. Giannakis]{.paper-authors}
+
+Mismatch negativity is the brain's response to a sound that breaks an expected pattern. We present
+a data-driven method for extracting its dynamics in space and time from electrocorticographic (ECoG)
+recordings of a marmoset monkey. The recordings are treated as observables of a skew-product
+dynamical system, and patterns of neural activity are extracted with the operator-theoretic
+formulation of ergodic theory. The method separates distinct frequencies in time without any
+bandpass filtering. After checking that the results are consistent and statistically significant, we
+examine the spatiotemporal dynamics and find that mismatch negativity is driven in part by a
+synchronization of the brain's response after a deviation in the auditory stimulus. This work led to
+the *Annals of Mathematics and Artificial Intelligence* paper listed above.
+
+[doi:10.1109/IJCNN.2018.8489475](https://doi.org/10.1109/IJCNN.2018.8489475){.btn .btn-outline-primary .btn-sm}
 :::
 
 ::: {.paper}
@@ -527,14 +565,108 @@ west Pacific multidecadal mode.
 ```{=html}
 <figure class="paper-figure">
   <div class="paper-figure-img"><img src="images/papers/indo-pacific-1.jpg" alt="Three rows, each with a power spectrum, a 100-year time series and a map of the Indo-Pacific for one mode." loading="lazy"></div>
-  <figcaption>Figure 2 · Spectra, time series and spatial patterns of three NLSA modes in CCSM4</figcaption>
+  <figcaption>Figure 2 · Spectra, time series and spatial patterns of three NLSA modes in CCSM4 <span class="paper-credit">From Slawinska and Giannakis, <em>J. Climate</em> 30, 5265.</span></figcaption>
 </figure>
 ```
 
-[Climate]{.paper-tag} [ENSO]{.paper-tag} [Pattern extraction]{.paper-tag}
-
 [doi:10.1175/JCLI-D-16-0176.1](https://doi.org/10.1175/JCLI-D-16-0176.1){.btn .btn-outline-primary .btn-sm}
 [arXiv:1604.01742](https://arxiv.org/abs/1604.01742){.btn .btn-outline-primary .btn-sm}
+:::
+
+::: {.paper}
+[2017 · NIPS Time Series Workshop]{.paper-meta}
+
+### Vector-valued spectral analysis of space-time data
+
+[D. Giannakis, **J. Slawinska**, A. Ourmazd and Z. Zhao]{.paper-authors}
+
+Finding coherent patterns in data from complex dynamical systems is a central problem across science
+and engineering. We combine operator-valued kernels with delay embedding to identify such patterns
+objectively, with no prior knowledge of the state space or of the laws that generated the data. The
+method works on a space of vector-valued observables, with a kernel that measures similarity in both
+time and space, where classical techniques such as PCA compare whole snapshots. The resulting
+decomposition is more efficient and more physically meaningful than those from scalar-valued
+kernels, as shown for an oscillator model and for sea surface temperature from a climate model.
+
+```{=html}
+<figure class="paper-figure">
+  <div class="paper-figure-img"><img src="images/papers/vsa-nips2017.jpg" alt="Six longitude-time heatmaps of equatorial Pacific sea surface temperature over ten years: the raw data, two patterns from the operator-valued kernel, and three from NLSA." loading="lazy"></div>
+  <figcaption>Figure 2 · Equatorial Pacific SST in CCSM4: raw data and patterns from the operator-valued kernel and from NLSA <span class="paper-credit">From Giannakis et al., arXiv:1805.09134.</span></figcaption>
+</figure>
+```
+
+[arXiv:1805.09134](https://arxiv.org/abs/1805.09134){.btn .btn-outline-primary .btn-sm}
+:::
+
+::: {.paper}
+[2017 · SIAM Data Mining, Workshop on Mining Big Data in Climate and Environment]{.paper-meta}
+
+### Data-driven Koopman analysis of tropical climate space-time variability
+
+[**J. Slawinska**, E. Székely and D. Giannakis]{.paper-authors}
+
+A study of the nonlinear dynamics of the Earth's tropical climate with Koopman eigenfunctions, which
+give low-dimensional temporal patterns for signals from ergodic dynamical systems. Applied to several
+tropical climate datasets, the method extracts a multiscale hierarchy of patterns on timescales from
+a day to several years. Without any prefiltering of the data, it detects intraseasonal and faster
+modes that correspond to propagating organized convection. We describe these travelling features,
+show how the activity of some of them is tied to lower-frequency dynamics, and discuss their
+potential predictability.
+
+```{=html}
+<figure class="paper-figure">
+  <div class="paper-figure-img"><img src="images/papers/tropical-koopman.jpg" alt="Map of the Indo-Pacific region showing a brightness temperature anomaly pattern, with a blue centre over the Maritime Continent and a red one to its east." loading="lazy"></div>
+  <figcaption>Figure 1 · Brightness temperature snapshot of the intraseasonal (MJO) mode <span class="paper-credit">From Slawinska et al., arXiv:1711.02526.</span></figcaption>
+</figure>
+```
+
+[arXiv:1711.02526](https://arxiv.org/abs/1711.02526){.btn .btn-outline-primary .btn-sm}
+:::
+
+::: {.paper}
+[2016 · 6th International Workshop on Climate Informatics, NCAR Technical Note TN-529, 49–52]{.paper-meta}
+
+### Spatiotemporal pattern extraction with data-driven Koopman operators for convectively coupled equatorial waves
+
+[**J. Slawinska** and D. Giannakis]{.paper-authors}
+
+Organized convection in the tropics takes the form of waves and oscillations across a wide range of
+scales. We study its patterns with a feature extraction technique based on eigenfunctions of the
+Koopman operator, which governs the evolution of observables in ergodic dynamical systems and gives
+low-dimensional representations of spatiotemporal signals. Applied to satellite brightness
+temperature data, the method extracts a multiscale hierarchy of patterns on timescales from years
+down to days. It includes the Madden–Julian Oscillation and travelling waves with the temporal and
+spatial scales of convectively coupled equatorial waves. The activity of some of these waves turns
+out to be modulated by intraseasonal modes such as the MJO and the boreal summer intraseasonal
+oscillation.
+
+[Proceedings (NSF PAR)](https://par.nsf.gov/biblio/10039222-proceedings-sixth-international-workshop-climate-informatics-ci){.btn .btn-outline-primary .btn-sm}
+:::
+
+::: {.paper}
+[2015 · *Proceedings of Machine Learning Research* **44**, 103–115 · NIPS workshop]{.paper-meta}
+
+### Spatiotemporal feature extraction with data-driven Koopman operators
+
+[D. Giannakis, **J. Slawinska** and Z. Zhao]{.paper-authors}
+
+A framework for feature extraction and mode decomposition of spatiotemporal data from ergodic
+dynamical systems. Instead of kernel operators, the feature maps are built from eigenfunctions of the
+Koopman group, the unitary operators that govern how observables evolve. Eigenvalues and
+eigenfunctions are computed with a Galerkin scheme from time-ordered data, with no knowledge of the
+equations of motion, in a data-driven basis obtained from diffusion maps. The resulting features
+separate timescales strongly, are predictable and smooth, and do not depend on how the system is
+observed. Examples are superimposed travelling waves on a periodic domain and satellite observations
+of organized convection in the tropics.
+
+```{=html}
+<figure class="paper-figure">
+  <div class="paper-figure-img"><img src="images/papers/koopman-nips2015.jpg" alt="Eight longitude-time panels of tropical brightness temperature for a winter and a summer period: raw data, the annual cycle, an intraseasonal oscillation and westward-propagating waves." loading="lazy"></div>
+  <figcaption>Figure 3 · Tropical brightness temperature: raw data (a, e) and reconstructions from Koopman eigenfunctions <span class="paper-credit">From Giannakis et al., <em>Proc. Mach. Learn. Res.</em> 44, 103.</span></figcaption>
+</figure>
+```
+
+[PMLR 44:103–115](https://proceedings.mlr.press/v44/giannakis15.html){.btn .btn-outline-primary .btn-sm}
 :::
 
 ::: {.paper}
@@ -544,17 +676,20 @@ west Pacific multidecadal mode.
 
 [**J. Slawinska**, W. W. Grabowski, H. Pawlowska and H. Morrison]{.paper-authors}
 
-Large-eddy simulations of a field of shallow cumulus from the BOMEX campaign, with a double-moment
-warm-rain microphysics scheme that predicts supersaturation and lets droplets activate above cloud
-base. About 40% of the droplets come from this in-cloud activation, which keeps droplet
-concentration roughly constant with height, as aircraft observe, and affects the effective radius
-and albedo of the clouds. Pristine and polluted aerosol conditions and two contrasting subgrid
-mixing scenarios are compared.
+How many droplets a cloud holds, and how large they are, controls how much sunlight it reflects. We
+study this in large-eddy simulations of a field of shallow cumulus from the BOMEX campaign, using a
+double-moment warm-rain microphysics scheme that predicts supersaturation, so that cloud droplets
+can form not only at cloud base but also higher up, wherever rising air becomes supersaturated,
+including air drawn in through the sides of the cloud. About 40% of the droplets come from this
+in-cloud activation. It offsets the dilution caused by entrainment and keeps the mean droplet
+concentration roughly constant with height, as aircraft observations show; without it,
+concentrations would fall with height. The activation above cloud base therefore matters for the
+effective radius and the albedo of the clouds. The simulations compare pristine and polluted aerosol
+conditions and two contrasting assumptions about how cloudy and clear air mix below the grid scale,
+homogeneous and extremely inhomogeneous mixing.
 
 <!-- No figure yet. To add one, save it as images/papers/droplet-activation.jpg and copy the figure block
      from another paper here, changing the file name, the description and the caption. -->
-
-[Clouds]{.paper-tag} [Large-eddy simulation]{.paper-tag}
 
 [doi:10.1175/JAS-D-11-054.1](https://doi.org/10.1175/JAS-D-11-054.1){.btn .btn-outline-primary .btn-sm}
 :::
@@ -574,11 +709,114 @@ concentrations and rain, yet the large-scale properties of the cloud field stay 
 ```{=html}
 <figure class="paper-figure">
   <div class="paper-figure-img"><img src="images/papers/shallow-convection.jpg" alt="Two panels of vertical profiles of cloud droplet concentration against height, shifted to the right as time advances." loading="lazy"></div>
-  <figcaption>Figure 7 · Mean cloud droplet profiles in the pristine (left) and polluted (right) runs</figcaption>
+  <figcaption>Figure 7 · Mean cloud droplet profiles in the pristine (left) and polluted (right) runs <span class="paper-credit">From Grabowski et al., <em>Acta Geophys.</em> 59, 1184.</span></figcaption>
 </figure>
 ```
 
-[Clouds]{.paper-tag} [Large-eddy simulation]{.paper-tag}
-
 [doi:10.2478/s11600-011-0038-9](https://doi.org/10.2478/s11600-011-0038-9){.btn .btn-outline-primary .btn-sm}
+:::
+
+::: {.paper}
+[2011 · *Journal of Advances in Modeling Earth Systems* **3**, M06001 · open access]{.paper-meta}
+
+### Controls on precipitation and cloudiness in simulations of trade-wind cumulus as observed during RICO
+
+[M. C. vanZanten, B. Stevens, L. Nuijens, A. P. Siebesma and 15 co-authors, including **J. Slawinska**]{.paper-authors}
+
+A model intercomparison: twelve large-eddy simulations, with very different treatments of cloud
+microphysics, are compared with each other and with independent measurements from the undisturbed
+period of the RICO field study of rain in trade-wind cumulus. The ensemble average reproduces many
+features of the observed clouds, including the vertical structure of cloud fraction and the profiles
+of cloud and rain water. The individual models differ considerably in their microphysical structure
+and in the surface rain they produce. Simulations that develop rain tend to end with a shallower and
+somewhat more stable cloud layer.
+
+```{=html}
+<figure class="paper-figure">
+  <div class="paper-figure-img"><img src="images/papers/rico-intercomparison.jpg" alt="Three panels with one line per model, grouped as bin, one-moment and two-moment schemes: precipitation flux against height, bulk fall velocity against height, and histograms of surface rain rate." loading="lazy"></div>
+  <figcaption>Figure 6 · Precipitation flux, fall velocity and surface rain-rate histograms in the twelve models <span class="paper-credit">From vanZanten et al., <em>J. Adv. Model. Earth Syst.</em> 3, M06001. CC BY 3.0.</span></figcaption>
+</figure>
+```
+
+[doi:10.1029/2011MS000056](https://doi.org/10.1029/2011MS000056){.btn .btn-outline-primary .btn-sm}
+:::
+
+::: {.paper .paper-fill}
+[2009 · *Quarterly Journal of the Royal Meteorological Society* **135**, 1906–1913]{.paper-meta}
+
+### The impact of atmospheric aerosols on precipitation from deep organized convection: A prescribed-flow model study using double-moment bulk microphysics
+
+[**J. Slawinska**, W. W. Grabowski and H. Morrison]{.paper-authors}
+
+How aerosols change the rain from deep convection is far less well understood than their effect on
+shallow clouds. To isolate the role of microphysics, we merge a prescribed-flow model with a
+double-moment scheme for warm rain and ice. The two-dimensional flow is fixed in advance and mimics
+an idealized squall line: a narrow region of strong convective updraft beside a much wider region of
+weak stratiform updraft lying over a stratiform downdraft. With the flow held fixed, the results
+imply that surface precipitation from organized convection can differ between pristine and polluted
+air only through the feedback of cloud condensation nuclei on the cloud dynamics. In that feedback,
+small differences in latent heating for the same flow pattern lead to different flow patterns.
+
+```{=html}
+<figure class="paper-figure">
+  <div class="paper-figure-img"><img src="images/papers/squall-line-3d.jpg" alt="Three-dimensional view of an idealized squall line over Great Plains farmland: a line of sunlit convective towers receding into the distance under a broad anvil, with a gridded vertical model plane cutting through the near end and showing the trailing anvil, stratiform rain below the 0 degree level, the surface cold pool and arrows for the inflow and rear inflow." loading="lazy"></div>
+  <figcaption>Illustration · Idealized squall line over the Great Plains, cut by a 2-D model plane with its numerical grid <span class="paper-credit">Original illustration; not model output from the paper.</span></figcaption>
+</figure>
+```
+
+[doi:10.1002/qj.450](https://doi.org/10.1002/qj.450){.btn .btn-outline-primary .btn-sm}
+:::
+
+::: {.paper}
+[2008 · *Journal of Climate* **21**, 1639–1647]{.paper-meta}
+
+### Optical properties of shallow convective clouds diagnosed from a bulk-microphysics large-eddy simulation
+
+[**J. Slawinska**, W. W. Grabowski, H. Pawlowska and A. A. Wyszogrodzki]{.paper-authors}
+
+Shallow clouds reflect far more sunlight than they trap heat, so their optical properties matter for
+climate. Those properties depend on how much liquid water a cloud holds and on the effective radius
+of its droplets. A large-eddy simulation with bulk microphysics predicts the liquid water but not the
+droplet sizes, so the effective radius has to be diagnosed, and the answer depends on what is
+assumed about entrainment and mixing. Shallow cumulus are strongly diluted by the dry air they
+entrain. If mixing is homogeneous, all droplets shrink together; if it is extremely inhomogeneous,
+some droplets evaporate completely and the rest keep their size. The choice between these
+assumptions has a dramatic effect on the albedo of the cloud field.
+
+```{=html}
+<figure class="paper-figure">
+  <div class="paper-figure-img"><img src="images/papers/shallow-clouds-optics.jpg" alt="Eight panels of height against droplet effective radius, for pristine (left) and polluted (right) conditions and four mixing scenarios; the contours narrow from a broad spread to a single curve, and radii are about half as large in the polluted case." loading="lazy"></div>
+  <figcaption>Figure 1 · Diagnosed effective radius with height for four mixing scenarios, pristine and polluted <span class="paper-credit">From Slawinska et al., <em>J. Climate</em> 21, 1639&ndash;1647. &copy; 2008 American Meteorological Society.</span></figcaption>
+</figure>
+```
+
+[doi:10.1175/2007JCLI1820.1](https://doi.org/10.1175/2007JCLI1820.1){.btn .btn-outline-primary .btn-sm}
+:::
+
+::: {.paper .paper-fill}
+[2005 · *Acta Astronomica* **55**, 195–204]{.paper-meta}
+
+### On the nature of regular pulsation in two LBV stars of NGC 300
+
+[W. A. Dziembowski and **J. Slawinska**]{.paper-authors}
+
+Two A-type supergiants in NGC 300 pulsate with striking regularity, with periods of 72.5 and 96.1
+days. We treat each star as a linear dynamical system whose eigenfrequencies are complex: a mode
+grows or decays according to the sign of the imaginary part. Following sequences of envelope models
+of decreasing mass, we track how these eigenfrequencies move in the complex plane. Ordinary
+overtones undergo avoided crossings, while a purely thermal, damped mode acquires an oscillatory
+character and turns unstable, driven by the opacity mechanism in the iron bump. This strange mode,
+with a period near 85 days that shortens to about 73 days, is a good candidate for the regular
+variability of the 72.5-day star, and the explanation requires both stars to be significantly
+undermassive.
+
+```{=html}
+<figure class="paper-figure">
+  <div class="paper-figure-img"><img src="images/papers/lbv-ngc300.jpg" alt="Paths in the complex frequency plane of the strange mode, the fundamental mode and two overtones as the stellar mass decreases; the strange mode and both overtones rise above zero growth rate into the unstable region, while the fundamental stays damped." loading="lazy"></div>
+  <figcaption>Complex eigenfrequencies of the lowest-order radial modes as the stellar mass decreases <span class="paper-credit">New visualization of results from Dziembowski and Slawinska, <em>Acta Astron.</em> 55, 195.</span></figcaption>
+</figure>
+```
+
+[PDF](https://acta.astrouw.edu.pl/Vol55/n2/pap_55_2_3.pdf){.btn .btn-outline-primary .btn-sm}
+[ADS: 2005AcA....55..195D](https://ui.adsabs.harvard.edu/abs/2005AcA....55..195D){.btn .btn-outline-primary .btn-sm}
 :::
