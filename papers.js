@@ -40,9 +40,9 @@
         updateMore(p);
       });
       // A "paper-fill" card is sized from its figure, so measure again once the figure has loaded.
-      var img = p.classList.contains("paper-fill") && p.querySelector(".paper-figure-img img");
+      var img = p.classList.contains("paper-fill") && p.querySelector(".paper-figure-img img, .paper-figure-img video");
       if (img) {
-        img.addEventListener("load", function () {
+        img.addEventListener(img.tagName === "VIDEO" ? "loadedmetadata" : "load", function () {
           if (p.classList.contains("is-current")) { updateMore(p); }
         });
       }
@@ -56,12 +56,26 @@
       if (!p.classList.contains("paper-fill") || p.classList.contains("is-open") || !wide.matches) {
         return;
       }
-      var img = p.querySelector(".paper-figure-img img");
-      if (!img || !img.naturalWidth) { return; }
+      // The figure is an image or, for a movie, a video with its width and height attributes set.
+      var img = p.querySelector(".paper-figure-img img, .paper-figure-img video");
+      var nw = img && (img.naturalWidth || img.videoWidth || img.width);
+      var nh = img && (img.naturalHeight || img.videoHeight || img.height);
+      if (!nw || !nh) { return; }
       var box = img.parentNode, cs = window.getComputedStyle(summary);
       var lh = parseFloat(cs.lineHeight) || 1.5 * parseFloat(cs.fontSize);
-      var spare = box.clientHeight - box.clientWidth * img.naturalHeight / img.naturalWidth;
+      var spare = box.clientHeight - box.clientWidth * nh / nw;
       summary.style.setProperty("--summary-lines", 4 + Math.max(0, Math.floor(spare / lh)));
+    }
+
+    // Close an opened summary again, so a paper always reappears folded, as it was first shown.
+    function fold(p) {
+      if (!p.classList.contains("is-open")) { return; }
+      p.classList.remove("is-open");
+      var more = p.querySelector(".paper-more");
+      if (more) {
+        more.textContent = "More";
+        more.setAttribute("aria-expanded", "false");
+      }
     }
 
     function updateMore(p) {
@@ -105,12 +119,27 @@
     var pos = 0;                                              // the paper on show
 
     function render(direction) {
-      papers.forEach(function (p) { p.classList.remove("is-current", "from-left", "from-right"); });
+      papers.forEach(function (p) {
+        p.classList.remove("is-current", "from-left", "from-right");
+        fold(p);
+      });
       prev.disabled = next.disabled = shown.length < 2;
       var p = papers[shown[pos]];
       p.classList.add("is-current");
       if (direction) { p.classList.add(direction > 0 ? "from-right" : "from-left"); }
       updateMore(p);
+      // A movie plays only while its paper is on show, and starts from the beginning each time.
+      papers.forEach(function (q) {
+        var v = q.querySelector(".paper-figure-img video");
+        if (!v) { return; }
+        if (q === p) {
+          var playing = v.play();
+          if (playing && playing.catch) { playing.catch(function () {}); }
+        } else {
+          v.pause();
+          try { v.currentTime = 0; } catch (e) {}
+        }
+      });
       counter.textContent = (pos + 1) + " of " + shown.length;
     }
 

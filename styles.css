@@ -831,13 +831,19 @@ section#slides > h2 {
   margin: 0.6rem 0 0.4rem;
 }
 
-.paper-figure-img img {
+.paper-figure-img img,
+.paper-figure-img video {
   display: block;
   max-width: 100%;
   max-height: 300px;
   margin: 0 auto;
   border-radius: 4px;
   background: #fff;
+}
+
+/* A movie carries its width and height as attributes; keep its shape when the column is narrower. */
+.paper-figure-img video {
+  height: auto;
 }
 
 .paper-figure figcaption {
@@ -879,7 +885,8 @@ section#slides > h2 {
     flex: 1 1 auto;
   }
 
-  .paper-browser-on .paper-figure-img img {
+  .paper-browser-on .paper-figure-img img,
+  .paper-browser-on .paper-figure-img video {
     position: absolute;
     inset: 0;
     width: 100%;
@@ -1237,6 +1244,19 @@ main:has(.project-facts) > h1 {
   display: block;
   font-size: 0.72rem;
   opacity: 0.85;
+}
+
+/* Licence links inside a credit line: underlined so they read as links even at this small size,
+   where the theme's link colour alone is easy to miss against the muted caption text. */
+.paper-credit a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.paper-credit a:hover,
+.paper-credit a:focus-visible {
+  color: #00693e;
 }
 
 /* ---------------------------------------------------------------------------------------------
