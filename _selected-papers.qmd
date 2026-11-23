@@ -92,7 +92,7 @@ how ENSO will change in the future.
 ```{=html}
 <figure class="paper-figure">
   <div class="paper-figure-img"><img src="images/papers/recharge-oscillator.jpg" alt="Four panels comparing linear and nonlinear embeddings of ENSO phase space for April and October, with blue-to-red contours and arrows showing forecast error vectors." loading="lazy"></div>
-  <figcaption>Figure 5 · Nonlinear embedding reduces deterministic forecast bias <span class="paper-credit">From Carr et al., <em>J. Climate</em> 39, 3905&ndash;3930. &copy; 2026 American Meteorological Society.</span></figcaption>
+  <figcaption>Figure 5 · Nonlinear embedding reduces deterministic forecast bias <span class="paper-credit">From Carr et al., <em>J. Climate</em> 39, 3905&ndash;3930. <a href="https://www.ametsoc.org/PUBSCopyrightPolicy">&copy; Copyright 2026 American Meteorological Society (AMS)</a>.</span></figcaption>
 </figure>
 ```
 
@@ -212,7 +212,7 @@ subspaces, and helps characterize coherent structures under skew-product dynamic
 
 ```{=html}
 <figure class="paper-figure">
-  <div class="paper-figure-img"><video src="images/papers/skew-product-dynamics.mp4" poster="images/papers/skew-product-dynamics-poster.jpg" width="1200" height="600" autoplay loop muted playsinline controls preload="metadata" aria-label="Movie of a skew-product system. On the left, a cylinder stands over a green base circle: a point hops around the circle by an irrational rotation while the fibre above it, drawn as a green vertical line, carries a point that lands on an attractor painted around the cylinder in blue and red. On the right, the same attractor unrolled over the base circle, a spiky fractal curve filling in as the orbit proceeds."></video></div>
+  <div class="paper-figure-img"><video src="images/papers/skew-product-dynamics.mp4" poster="images/papers/skew-product-dynamics-poster.jpg" width="1200" height="600" loop muted playsinline disablepictureinpicture disableremoteplayback preload="metadata" aria-label="Movie of a skew-product system. On the left, a cylinder stands over a green base circle: a point hops around the circle by an irrational rotation while the fibre above it, drawn as a green vertical line, carries a point that lands on an attractor painted around the cylinder in blue and red. On the right, the same attractor unrolled over the base circle, a spiky fractal curve filling in as the orbit proceeds."></video></div>
   <figcaption>Movie &middot; Skew-product dynamics: an irrational rotation of the base circle (green) drives a map of the fibre, and the orbit paints an attractor over the bundle <span class="paper-credit">Original illustration, using the Grebogi&ndash;Ott&ndash;Pelikan&ndash;Yorke map; not a figure from the paper.</span></figcaption>
 </figure>
 ```
@@ -379,7 +379,7 @@ and space together, where conventional tools work in one domain at a time.
 
 ```{=html}
 <figure class="paper-figure">
-  <div class="paper-figure-img"><video src="images/papers/marmoset-brain-patterns.mp4" poster="images/papers/marmoset-brain-patterns-poster.jpg" width="1200" height="600" autoplay loop muted playsinline controls preload="metadata" aria-label="Movie of two three-dimensional marmoset brains seen from the left, turning slowly, with electrode contacts marked and colour painted over the left hemisphere. On the left brain, the beta-band response washes across the whole hemisphere, red, then blue, then red again, strongest over parietal cortex. On the right brain, the fainter gamma-band pattern shows separate patches of opposite sign over parietal, auditory and occipital cortex. A timeline runs from 10 to 130 milliseconds after the tone, with ticks at the six snapshots published in the paper."></video></div>
+  <div class="paper-figure-img"><video src="images/papers/marmoset-brain-patterns.mp4" poster="images/papers/marmoset-brain-patterns-poster.jpg" width="1200" height="600" loop muted playsinline disablepictureinpicture disableremoteplayback preload="metadata" aria-label="Movie of two three-dimensional marmoset brains seen from the left, turning slowly, with electrode contacts marked and colour painted over the left hemisphere. On the left brain, the beta-band response washes across the whole hemisphere, red, then blue, then red again, strongest over parietal cortex. On the right brain, the fainter gamma-band pattern shows separate patches of opposite sign over parietal, auditory and occipital cortex. A timeline runs from 10 to 130 milliseconds after the tone, with ticks at the six snapshots published in the paper."></video></div>
   <figcaption>Movie &middot; The two responses to a deviant tone, from 10 to 130 ms after it: a large beta-band wave across the hemisphere (left) and a faint, patchy gamma-band pattern (right) <span class="paper-credit">Original animation. Electrode values and layout digitised from Figs. 1, 4 and 6 of Marrouch et al., <em>Ann. Math. Artif. Intell.</em> 88, 1155, &copy; The Author(s) 2019, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>; interpolated between the six published snapshots, on a schematic brain.</span></figcaption>
 </figure>
 ```
@@ -507,7 +507,7 @@ in the model and in the twentieth-century reanalysis alike.
 ```{=html}
 <figure class="paper-figure">
   <div class="paper-figure-img"><img src="images/papers/indo-pacific-wpmm.jpg" alt="Two panels of time series. The west Pacific multidecadal mode in blue runs against an 11-year running mean of Australian precipitation in red, the two largely out of phase, over 1300 years of CCSM4 in panel a and over 1860 to 2000 in 20CRv2c in panel b." loading="lazy"></div>
-  <figcaption>Figure 16 · The west Pacific multidecadal mode against decadal Australian rainfall, in CCSM4 (a) and 20CRv2c (b) <span class="paper-credit">From Giannakis and Slawinska, <em>J. Climate</em> 31, 693. &copy; 2018 American Meteorological Society.</span></figcaption>
+  <figcaption>Figure 16 · The west Pacific multidecadal mode against decadal Australian rainfall, in CCSM4 (a) and 20CRv2c (b) <span class="paper-credit">From Giannakis and Slawinska, <em>J. Climate</em> 31, 693. <a href="https://www.ametsoc.org/PUBSCopyrightPolicy">&copy; Copyright 2018 American Meteorological Society (AMS)</a>.</span></figcaption>
 </figure>
 ```
 
@@ -533,7 +533,7 @@ The full theory and further examples are in the *Journal of Nonlinear Science* p
 
 ```{=html}
 <figure class="paper-figure">
-  <div class="paper-figure-img"><video src="images/papers/enso-flavours.mp4" poster="images/papers/enso-flavours-poster.jpg" width="1200" height="600" autoplay loop muted playsinline controls preload="metadata" aria-label="Movie of schematic sea surface temperature anomalies over the tropical Pacific through ten years. Warm anomalies spread west from South America in an eastern Pacific El Niño, sit near the dateline in a central Pacific El Niño, and are replaced by a cold tongue in La Niña. Two curves below the map trace the mean anomaly in an eastern and a central box."></video></div>
+  <div class="paper-figure-img"><video src="images/papers/enso-flavours.mp4" poster="images/papers/enso-flavours-poster.jpg" width="1200" height="600" loop muted playsinline disablepictureinpicture disableremoteplayback preload="metadata" aria-label="Movie of schematic sea surface temperature anomalies over the tropical Pacific through ten years. Warm anomalies spread west from South America in an eastern Pacific El Niño, sit near the dateline in a central Pacific El Niño, and are replaced by a cold tongue in La Niña. Two curves below the map trace the mean anomaly in an eastern and a central box."></video></div>
   <figcaption>Movie · The flavours of ENSO: eastern Pacific El Niño, central Pacific El Niño and La Niña, patterns that move in space as they evolve in time <span class="paper-credit">Original schematic animation with synthetic data; not results from the paper.</span></figcaption>
 </figure>
 ```
@@ -600,7 +600,7 @@ records of about 150 years, showing how much data such weak, slow signals demand
 ```{=html}
 <figure class="paper-figure">
   <div class="paper-figure-img"><img src="images/papers/indo-pacific-wpmm-modes.jpg" alt="Three panels for the west Pacific multidecadal mode in CCSM4: a power spectrum with most of its power at decadal and longer periods, 300 years of its slowly varying time series, and a map of the Indo-Pacific with a cold SST anomaly north-east of New Guinea and warm anomalies south of Australia." loading="lazy"></div>
-  <figcaption>Figure 8, top row · The west Pacific multidecadal mode in CCSM4: power spectrum (a), 300 years of its time series (b) and SST anomaly composite (c) <span class="paper-credit">From Slawinska and Giannakis, <em>J. Climate</em> 30, 5265. &copy; 2017 American Meteorological Society.</span></figcaption>
+  <figcaption>Figure 8, top row · The west Pacific multidecadal mode in CCSM4: power spectrum (a), 300 years of its time series (b) and SST anomaly composite (c) <span class="paper-credit">From Slawinska and Giannakis, <em>J. Climate</em> 30, 5265. <a href="https://www.ametsoc.org/PUBSCopyrightPolicy">&copy; Copyright 2017 American Meteorological Society (AMS)</a>.</span></figcaption>
 </figure>
 ```
 
@@ -733,7 +733,7 @@ homogeneous and extremely inhomogeneous mixing.
 ```{=html}
 <figure class="paper-figure">
   <div class="paper-figure-img"><img src="images/papers/droplet-activation.jpg" alt="Three-dimensional view of a 6.4 by 6.4 km field of shallow cumulus between 0.5 and 1.7 km height: translucent light gray cloud isosurfaces, with dark patches of droplet activation concentrated near the cloud bases and in small regions higher up inside the clouds." loading="lazy"></div>
-  <figcaption>Figure 3 · Snapshot of cloud water (light gray) and droplet activation (dark) in the simulated cumulus field <span class="paper-credit">From Slawinska et al., <em>J. Atmos. Sci.</em> 69, 444. &copy; 2012 American Meteorological Society.</span></figcaption>
+  <figcaption>Figure 3 · Snapshot of cloud water (light gray) and droplet activation (dark) in the simulated cumulus field <span class="paper-credit">From Slawinska et al., <em>J. Atmos. Sci.</em> 69, 444. <a href="https://www.ametsoc.org/PUBSCopyrightPolicy">&copy; Copyright 2012 American Meteorological Society (AMS)</a>.</span></figcaption>
 </figure>
 ```
 
@@ -837,7 +837,7 @@ assumptions has a dramatic effect on the albedo of the cloud field.
 ```{=html}
 <figure class="paper-figure">
   <div class="paper-figure-img"><img src="images/papers/shallow-clouds-optics.jpg" alt="Eight panels of height against droplet effective radius, for pristine (left) and polluted (right) conditions and four mixing scenarios; the contours narrow from a broad spread to a single curve, and radii are about half as large in the polluted case." loading="lazy"></div>
-  <figcaption>Figure 1 · Diagnosed effective radius with height for four mixing scenarios, pristine and polluted <span class="paper-credit">From Slawinska et al., <em>J. Climate</em> 21, 1639&ndash;1647. &copy; 2008 American Meteorological Society.</span></figcaption>
+  <figcaption>Figure 1 · Diagnosed effective radius with height for four mixing scenarios, pristine and polluted <span class="paper-credit">From Slawinska et al., <em>J. Climate</em> 21, 1639&ndash;1647. <a href="https://www.ametsoc.org/PUBSCopyrightPolicy">&copy; Copyright 2008 American Meteorological Society (AMS)</a>.</span></figcaption>
 </figure>
 ```
 

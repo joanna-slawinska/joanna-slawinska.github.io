@@ -1,4 +1,4 @@
-Talks, lectures and posters of the last ten years, newest first.
+Talks, lectures and posters, newest first.
 
 | Date | Event | Type |
 |---|---|---|
@@ -48,3 +48,34 @@ Talks, lectures and posters of the last ten years, newest first.
 | Jan–Feb 2017 | Workshop on Data-Driven Methods for Reduced-Order Modeling and SPDEs, Banff International Research Station, Canada | Talk |
 | Jan 2017 | Dynamical Systems and Nonlinear Control Group, UC Santa Barbara, CA | Talk |
 | Dec 2016 | 49th AGU Fall Meeting, San Francisco, CA | Poster |
+| Nov 2016 | Kickoff workshop of the DARPA project *A Data-Driven Operator Theoretic Framework for Space-Time Analysis of Process Dynamics*, Santa Barbara, CA | Talk |
+| Sep 2016 | 6th International Workshop on Climate Informatics, National Center for Atmospheric Research (NCAR), Boulder, CO | Talk and poster |
+| Jun 2016 | Volcanic Impacts on Climate and Society Workshop, Lamont-Doherty Earth Observatory, New York, NY | Talk |
+| Apr 2016 | 32nd AMS Conference on Hurricanes and Tropical Meteorology, San Juan, PR | Talk |
+| Jan 2016 | 96th AMS Annual Meeting, Peter Lamb Symposium, New Orleans, LA | Poster |
+| Dec 2015 | 1st International Workshop on Feature Extraction: Modern Questions and Challenges, NIPS, Montreal, QC, Canada | Poster |
+| Jul 2015 | 21st AMOS National Conference (Australian Meteorological and Oceanographic Society), special session on the Indo-Pacific warm pool, Brisbane, Australia | Talk |
+| Apr–May 2015 | Workshop on Stochasticity and Organization of Tropical Convection, Banff International Research Station, Canada | Talk |
+| Jan 2015 | Workshop on Regional Climate Modeling of the Indian Ocean and Arabian Peninsula, Center for Prototype Climate Modeling, NYU Abu Dhabi, United Arab Emirates | Talk |
+| Jan 2015 | 95th AMS Annual Meeting, Conference on Climate Variability and Change, Phoenix, AZ | Poster |
+| Dec 2014 | 47th AGU Fall Meeting, session on multiscale variability and predictability of ocean circulation and climate, San Francisco, CA | Poster |
+| Jul 2014 | 7th International Scientific Conference on the Global Energy and Water Cycle, The World Forum, The Hague, Netherlands | Poster |
+| Jul 2014 | 10th AIMS Conference on Dynamical Systems, Differential Equations and Applications (American Institute of Mathematical Sciences), special session on improving climate and weather prediction through data-driven statistical modeling, Madrid, Spain | Talk |
+| Mar 2014 | Workshop on Clouds, Convection and Data, Center for Prototype Climate Modeling, NYU Abu Dhabi, United Arab Emirates | Talk |
+| Feb 2014 | 20th AMOS National Conference (Australian Meteorological and Oceanographic Society), *Southern Investigations*, Hobart, Australia | Talk |
+| Jun 2013 | 19th AMS Conference on Atmospheric and Oceanic Fluid Dynamics, Newport, RI | Poster |
+| May 2013 | 6th Northeast Tropical Conference, Rensselaerville, NY | Talk |
+| Dec 2012 | 1st International Conference on Frontiers in Computational Physics: Modeling the Earth System, Boulder, CO | Talk |
+| Apr 2012 | 30th AMS Conference on Hurricanes and Tropical Meteorology, Ponte Vedra Beach, FL | Talk |
+| Mar 2012 | Center for Atmosphere Ocean Science, Courant Institute of Mathematical Sciences, New York University, New York, NY | Talk |
+| Sep 2010 | 2nd International EULAG Workshop (Eulerian/Lagrangian Model for Multiscale Geophysical Flows), Sopot, Poland | Talk |
+| Sep 2010 | Exoclimes 2010: Exploring the Diversity of Planetary Atmospheres, Exeter, UK | Poster |
+| Jul 2010 | 2010 Sagan Exoplanet Summer Workshop, *Stars as Homes for Habitable Planetary Systems*, NASA Exoplanet Science Institute, California Institute of Technology, Pasadena, CA | Poster |
+| Jun–Jul 2010 | 13th Conference on Cloud Physics and 13th Conference on Atmospheric Radiation, Portland, OR | Two posters |
+| Aug–Sep 2009 | World Climate Conference-3, *Better Climate Information for a Better Future*, Geneva, Switzerland | Poster |
+| Jul 2009 | MOCA-09, IAMAS/IAPSO/IACS Joint Assembly, *Our Warming Planet*, Montreal, QC, Canada | Talk and poster |
+| Jun 2009 | CFMIP/GCSS Boundary Layer Working Group Workshop on Evaluation and Understanding of Cloud Processes in GCMs, University of British Columbia, Vancouver, BC, Canada | Talk and two posters |
+| Oct 2008 | 1st International EULAG Workshop (Eulerian/Lagrangian Model for Multiscale Geophysical Flows), Bad Tölz, Germany | Talk |
+| Sep 2008 | Dynamics of Inertial Particles: From Ocean and Atmosphere to Planets, Max Planck Institute for the Physics of Complex Systems, Dresden, Germany | Talk and two posters |
+| Jul 2008 | 15th International Conference on Clouds and Precipitation (ICCP), Cancún, Mexico | Two posters |
+| Jun 2008 | 4th Pan-GCSS Meeting on Advances on Modeling and Observing Clouds and Convection, Toulouse, France | Talk and two posters |

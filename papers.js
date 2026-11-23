@@ -7,6 +7,15 @@
 (function () {
   "use strict";
 
+  // Movies play by themselves, unless the visitor's system asks for reduced motion.
+  function stillPreferred() {
+    return !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+  }
+  function playQuietly(v) {
+    var p = v.play();
+    if (p && p.catch) { p.catch(function () {}); }
+  }
+
   function init(root) {
     var papers = Array.prototype.slice.call(root.querySelectorAll(".paper"));
     if (!papers.length) { return; }
@@ -132,12 +141,11 @@
       papers.forEach(function (q) {
         var v = q.querySelector(".paper-figure-img video");
         if (!v) { return; }
-        if (q === p) {
-          var playing = v.play();
-          if (playing && playing.catch) { playing.catch(function () {}); }
+        if (q === p && !stillPreferred()) {
+          playQuietly(v);
         } else {
-          v.pause();
-          try { v.currentTime = 0; } catch (e) {}
+          if (!v.paused) { v.pause(); }
+          if (v.currentTime > 0) { try { v.currentTime = 0; } catch (e) {} }
         }
       });
       counter.textContent = (pos + 1) + " of " + shown.length;
@@ -179,9 +187,10 @@
     render(0);
   }
 
-  // 2. Paper figures: click (or tap, or Enter) to see the figure large; click again or Esc to close.
+  // 2. Paper figures and movies: click (or tap, or Enter) to see them large; click outside, the
+  //    cross or Esc to close. An enlarged movie pauses and plays again with a click or Space.
   function zoomable() {
-    var imgs = document.querySelectorAll(".paper-figure-img img");
+    var imgs = document.querySelectorAll(".paper-figure-img img, .paper-figure-img video");
     if (!imgs.length) { return; }
     var box = document.createElement("div");
     box.className = "figure-zoom";
@@ -195,27 +204,75 @@
     close.setAttribute("aria-label", "Close enlarged figure");
     close.innerHTML = "&times;";
     var big = document.createElement("img");
+    var movie = document.createElement("video");
+    ["muted", "loop", "playsinline", "disablepictureinpicture", "disableremoteplayback"].forEach(function (a) {
+      movie.setAttribute(a, "");
+    });
+    movie.muted = true;
+    movie.tabIndex = 0;
+    movie.title = "Click to pause or play";
     var cap = document.createElement("p");
-    box.appendChild(close); box.appendChild(big); box.appendChild(cap);
+    box.appendChild(close); box.appendChild(big); box.appendChild(movie); box.appendChild(cap);
     document.body.appendChild(box);
     var opener = null;
+    function toggle() {
+      if (movie.paused) { playQuietly(movie); } else { movie.pause(); }
+    }
     function hide() {
       if (box.hidden) { return; }
       box.hidden = true;
       big.removeAttribute("src");
+      movie.pause();
+      movie.removeAttribute("src");
+      movie.load();
+      if (opener && opener.tagName === "VIDEO") {
+        var paper = opener.closest(".paper");
+        if (paper && paper.classList.contains("is-current") && !stillPreferred()) { playQuietly(opener); }
+      }
       if (opener) { opener.focus(); }
     }
     function show(img) {
       opener = img;
-      big.src = img.currentSrc || img.src;
-      big.alt = img.alt;
+      var isMovie = img.tagName === "VIDEO";
+      big.hidden = isMovie;
+      movie.hidden = !isMovie;
+      if (isMovie) {
+        img.pause();
+        movie.poster = img.poster;
+        movie.src = img.currentSrc || img.src;
+        movie.setAttribute("aria-label", img.getAttribute("aria-label") || "");
+        playQuietly(movie);
+      } else {
+        big.src = img.currentSrc || img.src;
+        big.alt = img.alt;
+      }
+      // The caption, with the credit on a line of its own.
       var fc = img.closest("figure") && img.closest("figure").querySelector("figcaption");
-      cap.textContent = fc ? fc.textContent : "";
+      cap.textContent = "";
+      if (fc) {
+        var main = fc.cloneNode(true), credit = main.querySelector(".paper-credit");
+        if (credit) { credit.parentNode.removeChild(credit); }
+        cap.appendChild(document.createTextNode(main.textContent.trim()));
+        if (credit) {
+          var line = document.createElement("span");
+          line.className = "figure-zoom-credit";
+          line.textContent = credit.textContent.trim();
+          cap.appendChild(line);
+        }
+      }
       box.hidden = false;
-      close.focus();
+      (isMovie ? movie : close).focus();
     }
     box.addEventListener("click", hide);
-    document.addEventListener("keydown", function (e) { if (e.key === "Escape") { hide(); } });
+    movie.addEventListener("click", function (e) { e.stopPropagation(); toggle(); });
+    document.addEventListener("keydown", function (e) {
+      if (box.hidden) { return; }
+      if (e.key === "Escape") { hide(); return; }
+      if (!movie.hidden && (e.key === " " || e.key === "Spacebar") && document.activeElement !== close) {
+        e.preventDefault();
+        toggle();
+      }
+    });
     Array.prototype.forEach.call(imgs, function (img) {
       img.classList.add("is-zoomable");
       img.tabIndex = 0;

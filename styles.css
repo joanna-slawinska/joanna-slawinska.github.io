@@ -1347,11 +1347,13 @@ main:has(.project-facts) > h1 {
 }
 
 /* Paper figures can be enlarged: click one to see it at full size over the page (papers.js). */
-.paper-figure-img img.is-zoomable {
+.paper-figure-img img.is-zoomable,
+.paper-figure-img video.is-zoomable {
   cursor: zoom-in;
 }
 
-.paper-figure-img img.is-zoomable:focus-visible {
+.paper-figure-img img.is-zoomable:focus-visible,
+.paper-figure-img video.is-zoomable:focus-visible {
   outline: 2px solid #00693e;
   outline-offset: 2px;
 }
@@ -1374,11 +1376,28 @@ main:has(.project-facts) > h1 {
   display: none;
 }
 
-.figure-zoom img {
+.figure-zoom img,
+.figure-zoom video {
   max-width: min(96vw, 1400px);
   max-height: calc(100vh - 8rem);
   background: #fff;
   border-radius: 4px;
+}
+
+/* An enlarged movie: fill the width it may have, and show that a click pauses it. */
+.figure-zoom video {
+  width: min(96vw, 1400px, calc((100vh - 8rem) * 2));
+  height: auto;
+  cursor: pointer;
+}
+
+.figure-zoom video:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+}
+
+.figure-zoom [hidden] {
+  display: none;
 }
 
 .figure-zoom p {
@@ -1387,6 +1406,12 @@ main:has(.project-facts) > h1 {
   color: #fff;
   font-size: 0.85rem;
   text-align: center;
+}
+
+.figure-zoom-credit {
+  display: block;
+  margin-top: 0.2rem;
+  opacity: 0.8;
 }
 
 .figure-zoom-close {
