@@ -39,7 +39,7 @@ the Stepanoff flow and the Lorenz 63 system, and connects naturally to quantum c
 ```{=html}
 <figure class="paper-figure">
   <div class="paper-figure-img"><img src="images/papers/second-quantization.jpg" alt="Six panels showing the real and imaginary parts of three approximate Koopman eigenfunctions on the torus, each made of swirling red and blue bands." loading="lazy"></div>
-  <figcaption>Figure 4 · Eigenfunctions of the regularized generator for the Stepanoff flow <span class="paper-credit">From Giannakis et al., arXiv:2501.07419.</span></figcaption>
+  <figcaption>Figure 4 · Eigenfunctions of the regularized generator for the Stepanoff flow <span class="paper-credit">From Giannakis et al., <a href="https://arxiv.org/abs/2501.07419">arXiv:2501.07419</a>. &copy; 2025 the authors.</span></figcaption>
 </figure>
 ```
 
@@ -62,7 +62,7 @@ system. We prove convergence in the limit of large data and illustrate the metho
 ```{=html}
 <figure class="paper-figure">
   <div class="paper-figure-img"><img src="images/papers/spectral-exterior-calculus.jpg" alt="Six 3D quiver plots of vector fields on a torus: rational rotation, irrational rotation and the Stepanoff flow, with the true fields in red above and the SEC-approximated fields in blue below." loading="lazy"></div>
-  <figcaption>Figure 7 · True and SEC-approximated vector fields on the 2-torus <span class="paper-credit">From Das et al., arXiv:2505.06061.</span></figcaption>
+  <figcaption>Figure 7 · True and SEC-approximated vector fields on the 2-torus <span class="paper-credit">From Das et al., <a href="https://arxiv.org/abs/2505.06061">arXiv:2505.06061</a>. &copy; 2025 the authors.</span></figcaption>
 </figure>
 ```
 
@@ -116,7 +116,7 @@ including from initial conditions it was not trained on.
 ```{=html}
 <figure class="paper-figure">
   <div class="paper-figure-img"><img src="images/papers/closure-pde-symmetries.jpg" alt="Four line plots of the final spatial profile of the height and momentum fields, true versus predicted, with dashed curves for the subgrid fluxes." loading="lazy"></div>
-  <figcaption>Figure 4 · True and predicted spatial profiles of the resolved state and subgrid fluxes <span class="paper-credit">From Vales et al., arXiv:2505.07519.</span></figcaption>
+  <figcaption>Figure 4 · True and predicted spatial profiles of the resolved state and subgrid fluxes <span class="paper-credit">From Vales et al., <a href="https://arxiv.org/abs/2505.07519">arXiv:2505.07519</a>. &copy; 2025 the authors.</span></figcaption>
 </figure>
 ```
 
@@ -141,7 +141,7 @@ non-unitary comultiplication operators as quantum gates.
 ```{=html}
 <figure class="paper-figure">
   <div class="paper-figure-img"><img src="images/papers/tensor-network.jpg" alt="Diagram of a tree tensor network, with rows of linked blue nodes branching inward from both sides toward a central pair of nodes." loading="lazy"></div>
-  <figcaption>Figure 4 · Tree tensor network used to compute the Fock space evolution <span class="paper-credit">From Giannakis et al., arXiv:2407.07242.</span></figcaption>
+  <figcaption>Figure 4 · Tree tensor network used to compute the Fock space evolution <span class="paper-credit">From Giannakis et al., <a href="https://arxiv.org/abs/2407.07242">arXiv:2407.07242</a>. &copy; 2024 the authors.</span></figcaption>
 </figure>
 ```
 
@@ -164,7 +164,7 @@ glaciation cycles, where the 40,000-year cycle is recovered from benthic δ¹⁸
 ```{=html}
 <figure class="paper-figure">
   <div class="paper-figure-img"><img src="images/papers/trends-and-cycles.jpg" alt="A rainbow-coloured cylinder (Model F) and a nested torus (Model F′) wrapped by black trajectories, linked to two eigenfunction time series: a high-frequency oscillation that switches off and a low-frequency oscillation that switches on." loading="lazy"></div>
-  <figcaption>Figure 1 · Models of frequency switching (Model F) and co-existing frequencies (Model F′) <span class="paper-credit">From Froyland et al., arXiv:2308.04045.</span></figcaption>
+  <figcaption>Figure 1 · Models of frequency switching (Model F) and co-existing frequencies (Model F′) <span class="paper-credit">From Froyland et al., <a href="https://arxiv.org/abs/2308.04045">arXiv:2308.04045</a>. &copy; 2023 the authors.</span></figcaption>
 </figure>
 ```
 
@@ -626,7 +626,7 @@ kernels, as shown for an oscillator model and for sea surface temperature from a
 ```{=html}
 <figure class="paper-figure">
   <div class="paper-figure-img"><img src="images/papers/vsa-nips2017.jpg" alt="Six longitude-time heatmaps of equatorial Pacific sea surface temperature over ten years: the raw data, two patterns from the operator-valued kernel, and three from NLSA." loading="lazy"></div>
-  <figcaption>Figure 2 · Equatorial Pacific SST in CCSM4: raw data and patterns from the operator-valued kernel and from NLSA <span class="paper-credit">From Giannakis et al., arXiv:1805.09134. &copy; 2018 the authors.</span></figcaption>
+  <figcaption>Figure 2 · Equatorial Pacific SST in CCSM4: raw data and patterns from the operator-valued kernel and from NLSA <span class="paper-credit">From Giannakis et al., <a href="https://arxiv.org/abs/1805.09134">arXiv:1805.09134</a>. &copy; 2018 the authors.</span></figcaption>
 </figure>
 ```
 
