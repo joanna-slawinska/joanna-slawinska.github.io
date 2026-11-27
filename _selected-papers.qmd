@@ -22,6 +22,34 @@
      The summaries were written in my own words from each paper's abstract. Replace any of them
      with your own abstract if you prefer. -->
 
+::: {.paper .paper-fill}
+[2026 · preprint, submitted]{.paper-meta} [New]{.paper-new}
+
+### The integrable Lie–Trotter–Suzuki decomposition for nonlinear dynamics: Efficient Hamiltonian simulation of the Stepanoff flow
+
+[I. Joseph, I. Novikau, M. R. Montgomery, **J. Slawinska** and D. Giannakis]{.paper-authors}
+
+We propose a unitary time-stepping scheme for nonlinear dynamics, the integrable
+Lie–Trotter–Suzuki (I-LTS) decomposition. The generator of the flow is written as a sum of integrable
+parts, which can be done for an arbitrary vector field, and the evolution operator is approximated by
+a Lie–Trotter–Suzuki product of their exact evolutions. Each factor has an explicit tensor-product
+structure that tensor-network and quantum block-encoding methods can exploit. We apply the scheme to
+the Stepanoff flow on the torus, a non-integrable Hamiltonian system, and derive a quantum algorithm
+that alternates quantum Fourier transforms with quantum signal processing, together with circuits
+that measure observables by amplitude estimation. Emulated on a fault-tolerant quantum computer, the
+circuit agrees with classical computations of the Koopman operator. Its cost grows linearly with the
+number of Fourier modes, because stability requires more time steps as the grid is refined.
+
+```{=html}
+<figure class="paper-figure">
+  <div class="paper-figure-img"><img src="images/papers/ilts-qae-circuit.jpg" alt="Quantum circuit diagram with horizontal qubit lines and boxes for state preparation, amplitude amplification, an inverse quantum Fourier transform and final measurements, outlined by dashed blue, red and grey frames." loading="lazy"></div>
+  <figcaption>Figure 12 · Quantum circuit that estimates an observable of the Stepanoff flow by amplitude estimation <span class="paper-credit">From Joseph et al., <a href="https://arxiv.org/abs/2611.34768">arXiv:2611.34768</a>. &copy; 2026 the authors.</span></figcaption>
+</figure>
+```
+
+[arXiv:2611.34768](https://arxiv.org/abs/2611.34768){.btn .btn-outline-primary .btn-sm}
+:::
+
 ::: {.paper}
 [2026 · *Nonlinearity* **39**, 115006 · open access]{.paper-meta} [New]{.paper-new}
 
@@ -38,8 +66,8 @@ the Stepanoff flow and the Lorenz 63 system, and connects naturally to quantum c
 
 ```{=html}
 <figure class="paper-figure">
-  <div class="paper-figure-img"><img src="images/papers/second-quantization.jpg" alt="Six panels showing the real and imaginary parts of three approximate Koopman eigenfunctions on the torus, each made of swirling red and blue bands." loading="lazy"></div>
-  <figcaption>Figure 4 · Eigenfunctions of the regularized generator for the Stepanoff flow <span class="paper-credit">From Giannakis et al., <a href="https://arxiv.org/abs/2501.07419">arXiv:2501.07419</a>. &copy; 2025 the authors.</span></figcaption>
+  <div class="paper-figure-img"><img src="images/papers/second-quantization-l63.jpg" alt="Six three-dimensional plots of the Lorenz butterfly attractor, coloured red and blue in swirling bands; the top row shows real parts and the bottom row imaginary parts of three eigenfunctions of increasing oscillation." loading="lazy"></div>
+  <figcaption>Figure 8 · Real and imaginary parts of three approximate Koopman eigenfunctions on the Lorenz 63 attractor <span class="paper-credit">From Giannakis et al., <a href="https://arxiv.org/abs/2501.07419">arXiv:2501.07419</a>. &copy; 2025 the authors.</span></figcaption>
 </figure>
 ```
 
